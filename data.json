@@ -1,0 +1,1207 @@
+[
+  {
+    "name":"Ontario",
+  "lat": "51.2538",
+  "lng": "-85.3232",
+    "children": [
+      {
+        "name": "Shopify",
+        "summary": "Shopify was launched in June 2006. Almost from the start, the response far exceeded expectations. Today, Shopify has 1,200+ employees and 275,000 customers based in 150 countries, with its headquarters in Ottawa. Together, those customers generate $17 billion in sales."
+      },
+      {
+        "name": "OpenText",
+        "summary": "OpenText, headquartered in Waterloo, Ontario, is the largest vendor of software in the world."
+      },
+      {
+        "name": "Kik",
+        "summary": "Kik is one of the most popular chat applications in the world with millions of users. Kik holds it's headquarters in Waterloo."
+      },
+      {
+        "name": "Magna",
+        "summary": "Founded in Ontario, Magna is the 3rd largest auto parts supplier in the world. The company is testing AVs on Ontario's roads and succesfully completed North America's first autonomous vehicle cross-border drive."
+      },
+      {
+        "name": "Linamar",
+        "summary": "Ontario-based Linamar, a leading powertrain supplier, is ranked as the 59th largest automotive supplier in the world."
+      },
+      {
+        "name": "MIS Electronics",
+        "summary": "MIS Electronics, an Ontario based company, provide next generation proximity and camera sensors for front and rear view, as well as full 360-degree visual sweeps"
+      },
+      {
+        "name": "Fortran Traffic Solutions",
+        "summary": "Ontario based traffic technology provider, with technology such as Aria: an Advanced Transportation Management System (ATMS) that represents Fortran’s next generation of hybrid central systems. They are also proposing a CV pilot on Ontario roadways."
+      },
+      {
+        "name": "Weather Telematics",
+        "summary": "Weather Telematics, located in Ottawa, provides road surface and environmental observation information. It offers occupants and the greater connected driving community insight into current road conditions as well as dynamic routing capabilities."
+      },
+      {
+        "name": "X-Matik Inc.",
+        "summary": "Start-up developinging add-on automation products. Approved to test AVs on Ontario's roads under MTO's pilot regulation. "
+      },
+      {
+        "name": "BlackBerry QNX",
+        "summary": "BlackBerry QNX, whose operating system is now in over 60-million vehicles, is investing $100 million in their Autonomous Vehicle Innovation Centre in Ottawa while also making use of Ontario's AV testing reguations."
+      },
+      {
+        "name": "ABC Group Inc.",
+        "summary": "Headquartered in Ontario, ABC Group is a world leader in the design, development, and production of plastic automotive systems and components."
+      },
+      {
+        "name": "Alcohol Countermeasures Systems",
+        "summary": "Alcohol Countermeasure Systems, headquartered in Etobicoke, develops alcohol interlock systems which prevent impaired driving."
+      },
+      {
+        "name": "Niagara Piston",
+        "summary": "Niagara Piston, headquartered in Beamsville, manufactures automotive brake components, using machining and hard chrome plating to provide North American automotive manufacturers with high-quality performance parts."
+      },
+      {
+        "name": "Woodbridge Group",
+        "summary": "The Woodbridge Group, headquartered in Woodbridge, offers innovative urethane and particle foam technologies to the automotive industry. The products offered provide comfort, acoustics, safety, structural and insulation properties. "
+      },
+      {
+        "name": "Electrovaya",
+        "summary": "Electrovaya is a lithium-ion battery supplier located in Mississauga. Electrovaya provides batteries for various equipment manufacturers across North America."
+      },
+      {
+        "name": "Hydrogenics",
+        "summary": "Hydrogenics is a manufacturer of hydrogen fuel cells in Mississauga. Hydrogenic's fuel cells power transit authorities throughout the world."
+      },
+      {
+        "name": "KN Rubber",
+        "summary": "KN Rubber is North America's leading supplier of products and materials derived from recycled rubber. KN Rubber, headquartered in Toronto, uses state-of-the-art technology to regenerate discarded tires into usable products for the automotive industry."
+      },
+      {
+        "name": "Theta TTS Inc.",
+        "summary": "Theta TTS, found in Barrie, is a full-service component supplier for the auto industry worldwide. Based on the TS 16949 quality standard, Theta TTS provides quality design, development production and shipping with an emphasis on continuous improvement. "
+      },
+      {
+        "name": "Ultra Manufacturing Ltd.",
+        "summary": "Ultra Manufacturing's Mitchell Plastics is a leading Tier 1 supplier of automotive interior mechanisms and decorative components. As a full service provider, Mitchel Plastics, located in Kitchener, provides its customers with concept, design, development services and full product testing."
+      },
+      {
+        "name": "Upland Technologies Inc.",
+        "summary": "Upland Technologies, headquartered in Cambridge, has decades of experience in the tube and sheet metal forming industry, specializing in muffler making and tube endforming machines."
+      },
+      {
+        "name": "Intelligent Mechatronics Systems",
+        "summary": "Intelligent Mechatronics Systems creates: vehicle telematics, vehicle Connectivity, Human Machine Interface, V2V /V2I Informatics,  and Traffic Data. IMS has its headquarters in Waterloo."
+      },
+      {
+        "name": "G4 Apps",
+        "summary": "G4 Apps delivers real time, operational grade data and advice to all stakeholders towards cost reduction, increased mobility and improved sustainability in reliable and safe manners. They also provide connected vehicle technologies and services. G4 Apps has its headquarters in Oakville. "
+      },
+      {
+        "name": "Ritz Plastics",
+        "summary": "Ritz Plastics, located in Peterborough, supplies various companies, uncluding Magna, Johnson Controls and Lear, with plactics solutions for doors, seats, consols and fenders."
+      },
+      {
+        "name": "Havelaar Group",
+        "summary": "In May 2017, Havelaar Canada unveiled the Bison, the world's first all-electric pickup truck that was developed right here in Ontario."
+      },
+      {
+        "name": "Martinrea International Inc.",
+        "summary": "Headquartered in Ontario, Martinrea is the 68th largest global OEM supplier and a leader in the development and production of quality metal parts, assemblies and modules, fluid management systems, and complex aluminum products."
+      },
+      {
+        "name": "Lixar ",
+        "summary": "Lixar provides  mobile solutions for connected transportation in air, auto and telecom industries. The company, located in Ottawa, specializing in mobile communication, Big Data and specialized design of connected technology."
+      },
+      {
+        "name": "AirBoss of America",
+        "summary": "Airboss, headquartered in Newmarket, develops, manufactures and sells high-quality rubber compounds. Airboss has the capacity to supply over 250 million pounds of rubber annually to a diverse group of rubber manufacturers."
+      },
+      {
+        "name": "KSR International Co.",
+        "summary": "KSR International Co. is headquartered in Ontario with locations across North America, Europe, and Asia. The company manufactures sensors and brake/accelerator technologies."
+      },
+      {
+        "name": "Fleetwood Metal Industries inc.",
+        "summary": "Fleetwood Metalfocuses on state-of-the-art metal stamping and welding technologies. Fleetwood has four plants in North America, three of which are in southwestern Ontario."
+      },
+      {
+        "name": "DSG-Canusa",
+        "summary": "DSG-Canusa, headquartered in Etobicoke, is the complete source for heat shrink tubing products. DSG-Canusa's products are used for wire harnesses, splice seals and water blocking applications in automobiles."
+      },
+      {
+        "name": "Barrday Inc.",
+        "summary": "Barrday provides advanced material solutions for markets including vehicle armor and lightweight composites. Barrday manufactures and has headquarters in Cambridge."
+      },
+      {
+        "name": "Multimatic Inc.",
+        "summary": "Multimatic Inc., a leader in carbon-fiber technologies, assembles the Ford GT Supercar in Ontario."
+      },
+      {
+        "name": "TrustPoint Innovation",
+        "summary": "Develops innovative products and services to address the security needs for the internet of things (IoT) and machine to machine (M2M) communications markets, including connected car, NFC devices and critical infrastructure applications. TrustPoint solutions help customers embed the highest standard of security in constrained devices while maintaining central control over identities and authorizations. Trustpoint is headquartered in Waterloo."
+      },
+      {
+        "name": "Smats Traffic Solutions",
+        "summary": "An Ontario based company specializing in I2X technology."
+      },
+      {
+        "name": "Ontario Drive and Gear Ltd.",
+        "summary": "Ontario Drive and Gear has built a solid reputation for the design and manufacture of gears and transmissions. Ontario Gear and Drive, which has three facilities residing in Ontario, has received numerous awards from its industrial customers."
+      },
+      {
+        "name": "A.P. Plasman Corporation",
+        "summary": "A.P. Plasman, located in Windsor, offers molding, finishing as well as complete assembly of Class \"A\" exterior trim components and sub-systems to a variety of OEM and Tier 1 customers."
+      },
+      {
+        "name": "Anchor Danly",
+        "summary": "Anchor Danly, with locations in Windsor and Cambridge, is a manufacturer of die sets, steel plate, fabrications and industrial supplies. Anchor Danly's die sets and steel plate are used in the advanced tooling, metal forming and plastic injection molding industry."
+      },
+      {
+        "name": "L-3 Wescam",
+        "summary": "\"We have all the benefits of talent, supply chain, transportation, logistics and international travel right here [in Ontario].\" - Mike Greenley, president of L-3 Wescam."
+      },
+      {
+        "name": "Ramsden Industries Ltd.",
+        "summary": "Ramsden Industries, headquartered in London, utilizes pre-production engineering, design, quality production and sales to produce successful aluminum castings that are used in transmissions, engines and more. "
+      },
+      {
+        "name": "Centerline Limited",
+        "summary": "Centerline Ltd., headquartered in Windsor, is one of the most vertically integrated corporations in the resistance welding industry with international locations across the U.S., Mexico, Brazil, Germany, Romania, India, and China."
+      }
+    ]
+  },
+  {
+    "name": "Austria",
+  "lat": "47.51623",
+  "lng": "14.5501",
+    "children": [
+      {
+        "name": "Kapsch",
+        "summary": "Kapsch is a telematics, IT and telecommunications company that provides fully integrated end-to-end solutions for V2V and V2I communication. Kapsch is currently in a 16-year partnership with 407ETR to supply transponder tolling technology in Ontario and is also in a strategic partnership with NIITEC on border infrastructure improvements as well as piloting of DSRC technologies."
+      }
+    ]
+  },
+  {
+    "name": "Australia",
+    "lat": "-25.2744",
+  "lng": "133.7751",
+    "children": [
+      {
+        "name": "Cohda Wireless",
+        "summary": "An Original Equipment Manufacturer, who create Dedicated Short Range Communication devices. They are working with Fortran to Pilot on Ontario roadways."
+      }
+    ]
+  },
+  {
+    "name": "British Columbia",
+    "lat": "53.7267",
+    "lng": "-127.6476",
+    "children": [
+      {
+        "name": "Slack",
+        "summary": "In September 2016, Slack, the San Francisco-based technology company, announced a new sales and customer support office to be located in Toronto that will create 145 jobs."
+      }
+    ]
+  },{
+    "name": "California",
+     "lat": "36.7783",
+     "lng": "-119.4179",
+    "children": [
+      {
+        "name": "Advanced Micro Devices (AMD)",
+        "summary": "AMD has more researchers at its Markham Ontario office than it does in India and China combined."
+      },
+      {
+        "name": "Electronic Arts",
+        "summary": "The Electronic Arts group in Kitchener, Ontario is called the Red Crow Mobile Team, which is a small but talented team that have had a hand in developing such games as Simpsons: Tapped Out, Star Wars: Galaxy of Heroes, Scrabble, and Bejeweled Stars."
+      },
+      {
+        "name": "Facebook",
+        "summary": "FaceBook has partnered with the University of Waterloo to collaborate on key technology research projects. "
+      },
+      {
+        "name": "Kaiser Aluminum",
+        "summary": "Kaiser Aluminum's Ontario facility (Kaiser Aluminum Canada Ltd.) produces aluminum automotive extrusion products."
+      },
+      {
+        "name": "Google",
+        "summary": "\r\nGoogle's largest R&D centre in Canada is in Waterloo Ontario. Their software engineers, product managers, user experience researchers, and designers collaborate to build systems used by hundreds of millions around the globe. They've made major contributions to familiar products like Gmail, Inbox, and Chrome. "
+      },
+      {
+        "name": "Intel",
+        "summary": "Intel opened a technology lab in the Waterloo region to help fuel Canadian digital media innovation."
+      },
+      {
+        "name": "NVIDIA",
+        "summary": "NVIDIA purchased Toronto's Transgaming for its game portability technology."
+      },
+      {
+        "name": "Oracle",
+        "summary": "With headquarters in Mississauga, Ontario, Oracle Canada develops customized, fully-integrated computing solutions for its customers from 13 offices across the country.                                                                "
+      },
+      {
+        "name": "Qualcomm",
+        "summary": "Qualcomm Canada Inc.'s operations are based out of Markham, Ontario. Qualcomm provides a suite of on-board features, including connectivity, infotainment, navigation, and driver safety for all global automotive brands, helping carmakers integrate cutting-edge wireless and computer technologies into today's connected car. "
+      },
+      {
+        "name": "Teledyne DALSA",
+        "summary": "Teledyne DALSA is an international leader in digital imaging and semiconductors, with about 1,000 employees worldwide, based in Waterloo, Ontario. "
+      },
+      {
+        "name": "Uber",
+        "summary": "After years of conducting world-leading research on self-driving vehicles, U of T Associate Professor Raquel Urtasun joined Uber – and brought the American company’s first international research lab to Toronto.  "
+      },
+      {
+        "name": "Cisco",
+        "summary": "Cisco opened a Canadian Innovation Centre in Toronto that is now home to one of only nine Cisco Innovation Centres worldwide "
+      },
+      {
+        "name": "Twitter",
+        "summary": "The @TwitterCanada HQ in downtown Toronto is a destination for the biggest names and the best talent in the country. The office’s open layout encourages creativity and collaboration with spacious work stations and breakout rooms, and a large common area that's perfect for conversing with colleagues, hosting events, or grabbing a game of ping pong between meetings."
+      },
+      {
+        "name": "Pivotal Software",
+        "summary": "Pivotal Software specializes in cloud software, IoT, security, and Smart Apps; its Toronto office is one of its largest in the world."
+      },
+      {
+        "name": "Real-Time Innovations",
+        "summary": "Real-Time Innovations specializes in IoT connectivity, with applications ranging from autonomous planes, trains and cars; traffic control; shipping; robotics; and more. RTI has its Canadian headquarters located in Ottawa."
+      },
+      {
+        "name": "Wells Fargo",
+        "summary": "Wells Fargo offers a variety of businesses a broad range of financial products and services to help make the most of opportunities in Canada."
+      },
+      {
+        "name": "Econolite Group Inc.",
+        "summary": "A leader in the ITS industry creating cabinets, traffic controllers, systems, signals, detection and communications. Their signals are CVAV ready and Econolite has a manufacturing location in Markham."
+      },
+      {
+        "name": "Visa",
+        "summary": "Visa, with offices in Ontario, is the leading payment card in Canada. "
+      },
+      {
+        "name": "Litmus Automation",
+        "summary": "Litmus Automation, with a location in Toronto, provides a full service connected car solution for automotive manufacturers. Solutions include Smart Charging, Wearables & Connected Car, Fleet Management, Car Sharing and Maintenance & Service."
+      }
+    ]
+  },
+  {
+    "name": "New York",
+    "lat": "40.7128",
+  "lng": "-74.0060",
+    "children": [
+      {
+        "name": "Mastercard",
+        "summary": "MasterCard, with offices in Ontario, is a global payments and technology company that operates the world’s fastest payments processing network, connecting consumers, financial institutions, merchants, governments and businesses in more than 210 countries and territories. "
+      },
+      {
+        "name": "IBM",
+        "summary": "The IBM Canada Research and Development Centre includes two of the company’s “Blue Gene/Q supercomputers” at the University of Toronto and cloud computing infrastructure at Western University in London, Ontario. "
+      },
+      {
+        "name": "Rockstar Games",
+        "summary": "Grand Theft Auto, Max Payne and Red Dead are just some of the games that are designed in Toronto for Rockstar Games."
+      },
+      {
+        "name": "iCones",
+        "summary": "iCone relays real-time traffic information to governments officials, emergency response personnel, trucking fleets, the public information re-sellers, the public, and information re-sellers through an online application. iCones has been deployed in Ontario workzones for queue end warning systems. "
+      },
+      {
+        "name": "AIG Insurance",
+        "summary": "Operating in Canada for over 50 years, AIG offers a comprehensive range of consumer and commercial insurance and risk management products and services, helping Canadian companies and individuals capture today's opportunities."
+      },
+      {
+        "name": "Morgan Stanley",
+        "summary": "Morgan Stanley is one of North America's leading global financial institutions, offering  clients a comprehensive array of financial services in Canada including investment banking, equity and fixed income research sales."
+      },
+      {
+        "name": "Olympic Tool and Die Inc.",
+        "summary": "With Canadian operations out of Mississauga, Olympic Tool and Die provides dies to produce seatbelt harness buckles, seat tracks, window tracks, bumpers, impact beams, and engine frames."
+      }
+    ]
+  },
+  {
+    "name": "China",
+    "lat": "39.913818",
+    "lng": "116.363625",
+    "children": [
+      {
+        "name": "Yanfeng Automotive Interiors",
+        "summary": "A world leader in automotive interiors, Yangfeng Automotive Interiors is redefining how society will live and work inside the vehicles of tomorrow. Yanfeng has manufacturing operations in Mississauga."
+      },
+      {
+        "name": "Huawei",
+        "summary": "As one of Canada’s top corporate R&D spenders, Huawei is a major investor in 5G advanced communications research. The imminent breakthroughs of this research are expected to pave the way for autonomous vehicles and the Internet of Things, thereby transforming Canada into a technology superpower. "
+      },
+      {
+        "name": "ZTE Corporation",
+        "summary": "ZTE was ranked No. 1 in the World Intellectual Property Organization's latest annual list for patent applications, reflecting the R&D in next-gen technologies including 5G, network virtualization, cloudification and IoT. ZTE has an office in Toronto, ON."
+      },
+      {
+        "name": "Sichuan Bohong Industry Co. Ltd.",
+        "summary": "Bohong's Wescast is the largest global manufacturer of cast exhaust manifolds and turbocharger housings for passenger cars and trucks. As a global market leader, metallurgical development, knowledge and expertise provides customers the most innovative exhaust component designs. Bohong has four facilities spread throughout southwestern Ontario."
+      }
+    ]
+  },
+  {
+    "name": "Connecticut",
+     "lat": "41.6032",
+     "lng": "-73.0877",
+    "children": [
+      {
+        "name": "Amphenol Technical Products International",
+        "summary": "Amphenol, which can be found in Scarborough, is a leading supplier of advanced interconnect systems, antennas and sensors for infotainment, telematics, communication and navigation modules for the automotive industry"
+      }
+    ]
+  },
+  {
+    "name": "Finland",
+    "lat": "61.9241",
+    "lng": "25.7482",
+    "children": [
+      {
+        "name": "Nokia",
+        "summary": "Nokia is spearheading next-generation communication services, revolutionizing the future of 5G and Internet of Things. Nokia’s presence in Ottawa is primarily focused on research and development. "
+      }
+    ]
+  },
+  {
+    "name": "New Jersey",
+    "lat": "40.0583",
+    "lng": "-74.4057",
+    "children": [
+      {
+        "name": "Johnson & Johnson",
+        "summary": "Johnson & Johnson Innovation opened its first JLABS incubator outside of the United States, in Toronto, Ontario. "
+      },
+      {
+        "name": "Campbell Soup Company",
+        "summary": "On November 28, 1930, the wholesome, convenient goodness of the famous “red and white label” finally came to Canada. 80 years later, they are still in the original building in Toronto, Ontario. "
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "lat": "46.2276",
+    "lng": "2.2137",
+    "children": [
+      {
+        "name": "Ubisoft",
+        "summary": "Led by Assassin's Creed producer, Jade Raymond, the Toronto studio developed Tom Clancy's Splinter Cell: Blacklist, the most recent installment of the Splinter Cell series, in conjunction with Ubisoft Montreal."
+      },
+      {
+        "name": "Gameloft",
+        "summary": "Gameloft opened a state-of-the art studio in Toronto in 2011. Gameloft Toronto has developed Blacklist: The Conspiracy, Disney Magic Kingdoms, and CSI Slots. "
+      },
+      {
+        "name": "Faurecia",
+        "summary": "Faurecia, a large Tier-1 automotive supplier, produces emissions control technologies in Ontario that have been awared Q1 certification from Ford Motor Company."
+      },
+      {
+        "name": "CARFIT",
+        "summary": "CARFIT creates a self-diagnostic and predictive maintenance platform in the connected car space, providing dealers and service providers with customized lead generation. They have assisted the University of Waterloo in Ontario with a connected vehicle."
+      },
+      {
+        "name": "Airbus Helicopters",
+        "summary": "“When you invest in Ontario, you know that you have the support of government and other partners to help you prosper.” – Romain Trapp, COO of Airbus Helicopters North America"
+      },
+      {
+        "name": "ARaymond Network",
+        "summary": "ARaymond is a global leader in fastening solutions for the automotive industry with locations across Europe, Africa, Asia, and North and South America. Araymond's Ontario manufacturing operations are in Hamilton."
+      },
+      {
+        "name": "Sanofi Pasteur",
+        "summary": " \"There is a growing life sciences cluster here, in Ontario, and it's developing rapidly. I like to refer to it as an ecosystem. There are large companies like ourselves, universities and research institutions, skilled labour, small companies - all of this coming together.\" - Mark Lievonen, President, Sanofi Pasteur."
+      },
+      {
+        "name": "Valeo SA",
+        "summary": "Valeo is an automotive supplier and partner to automakers worldwide. As a technology company, Valeo designs innovative solutions for smart mobility with a particular focus on intuitive driving and reducing carbon dioxide emissions, with a Canadian location in Alliston."
+      }
+    ]
+  },
+  {
+    "name": "United Kingdoms",
+    "lat": "55.3781",
+  "lng": "-3.4360",
+    "children": [
+      {
+        "name": "Fiat Chrysler Automobiles",
+        "summary": "FCA invested $2 billion in its Windsor, Ontario plant to produce the world's first-ever plug-in hybrid electric minivan. FCA also has a leading R&D centre in Ontario."
+      },
+      {
+        "name": "HellermannTyton North America",
+        "summary": "HellermannTyton is a global leader in fastening solutions for the automotive industry. The company's Canadian operations are based in Aurora."
+      },
+      {
+        "name": "GKN Sinter Metals Inc.",
+        "summary": "GKN Sinter Metals, located in St. Thomas, provides a wide variety of products including pump systems, body and chassis, engine, transmission and drivetrain as well as electric systems, all of which utilize powder metallurgy technology allowing for lightweight products."
+      },
+      {
+        "name": "Bodycote PLC",
+        "summary": "Bodycote, with two locations in Newmarket and Kitchener, is a global provider of thermal processing services, including heat treatment, metal joining, hot isostatic pressing and surface technology with applications in the transportation and automotive sectors, among others."
+      },
+      {
+        "name": "AstraZeneca",
+        "summary": "A science-led biopharmaceutical company pushing the boundaries of science to deliver life-changing medicines, AztraZeneca employs more than 700 people in Canada who work to research, develop and market innovative medicines. AstraZeneca Canada was recently designated a global Clinical Hub for oncology and immuno-oncology clinical studies. "
+      },
+      {
+        "name": "GlaxoSmithKline",
+        "summary": "GSK is a science-led global healthcare company on a mission: \"we want to help people do more, feel better, live longer. We have three world-leading businesses that research, develop and manufacture innovative pharmaceutical medicines, vaccines and consumer healthcare products.\" GSK is ranked among the top 10 contributors to R&D in Canada; its head office is located in Mississauga, Ontario."
+      }
+    ]
+  },
+  {
+    "name": "Germany",
+    "lat": "51.1657",
+    "lng": "10.4515",
+    "children": [
+      {
+        "name": "Siemens",
+        "summary": "Siemens offers a comprehensive range of mobility products, systems and solutions across five business units: mobility management; turnkey projects & electrification; mainline transport; urban transport; and customer services. Siemens has had a presence in Ontario since they opened an office in Toronto, Ontario over 100 years ago."
+      },
+      {
+        "name": "Kautex Textron GmbH & Co.",
+        "summary": "Kautex Textron Canada produces light-weight plastic fuel tank systems."
+      },
+      {
+        "name": "SAP",
+        "summary": "With strengths in cloud computing, IoT and Big Data, SAP's automotive business offers a range of products and services for automotive manufacturing, logistics, mobility services, and more. SAP has four locations throughout Ontario."
+      },
+      {
+        "name": "Giesecke & Devrient",
+        "summary": "With over 160 years of experience, G&D is actively helping shape one of the most important trends of the future: security. The long established technology group creates confidence in global payment transactions, modern communication, digital identities and data security, by providing innovative products and solutions."
+      },
+      {
+        "name": "Progress Werk Oberkirch",
+        "summary": "PWO Canada, located in Kitchener, utilizes large presses and automated systems for bonding, welding and assembly systems to produces parts for body and chassis in automotives."
+      },
+      {
+        "name": "Drossbach GmbH",
+        "summary": "Drossbach Canada, based out of Trenton, manufactures custom wires, tubes, hoses and other products for the automotive industry."
+      },
+      {
+        "name": "I.G. Bauerhin GmbH",
+        "summary": "I.G. Bauerhin, located in Windsor, is a rapidly expanding company that is a leader in the field of electric seat heating, along with steering wheel heaters, sensors for seat occupany detection and components for climate seats."
+      },
+      {
+        "name": "HBPO GmbH",
+        "summary": "HBPO offers various levels of cooperation regarding front-end modules. Ranging from initial concept to construction to integration, HBPO understands the front-end is an essential element for safety, aerodynamics and fuel efficiency. HBPO Canada Inc.'s just-in-time assembly plant in Windsor, Ontario, produces front-end modules for Chrysler and Dodge. HBPO's front end modules are designed for safety, aerodynamics, and fuel efficiency."
+      },
+      {
+        "name": "BASF",
+        "summary": "BASF Canada is headquartered in Mississauga, Ontario, and has four manufacturing facilities throughout the province. BASF Canada manufactures a variety of paints, coatings and advanced materials that contribute to battery development, electric vehicles, lightweighting and fuel efficiency."
+      },
+      {
+        "name": "Brose Fahrzeugtelle GmbH",
+        "summary": "Brose Canada produces mechatronic components and systems with core competencies in technology for vehicle doors and liftgates, adjustment systems for seats, and electric motors and drives."
+      },
+      {
+        "name": "Eberspaecher GmbH & Co. KG",
+        "summary": "In Ontario, Eberspacecher Vecture Inc. designs and manufactures protectors, battery level gauges, charging systems, DC/DC converters, and interconnect boards that are used in Battery Management Systems applications."
+      },
+      {
+        "name": "Freudenberg Group",
+        "summary": "Freudenberg's Dichtomatik Canada, in Markham, is a global distribution service company that specializes in industrial sealing solutions including oil seals, o-rings, spliced cord and extrusions. "
+      },
+      {
+        "name": "ErlingKlinger AG",
+        "summary": "ErlingKlinger is a worldwide development partner and supplier of cylinder-head and speciality gaskets, housing modules and other engine technology. ErlingKlinger, with a manufacturing location in Leamington, also provides exhaust gas purification technology and battery/fuel cell components to many vehicle and engine manufacturers."
+      },
+      {
+        "name": "Dr. Oetker",
+        "summary": "The London, Ontario facility houses production of the company's pizza lines, including Ristorante, Casa di Mama and Panebello. Over time, the facility will produce up to 50 million frozen pizzas every year for both the Canadian and U.S. markets"
+      },
+      {
+        "name": "Bayer",
+        "summary": "Bayer Inc. is a Canadian subsidiary of Bayer AG and the corporate headquarters for the Canadian healthcare operations. Bayer is a world-class innovation company in life sciences, creating innovative products, breakthrough treatments and healthier alternatives to improve the quality of life for people, animals and communities."
+      },
+      {
+        "name": "Schaeffler Group",
+        "summary": "Schaeffler Group is responsible for the engineering, production, sales and marketing of high-performance, precision technologies for North American OEMs. Two production locations in Stratford are responsible for the development and manufacturing of rolling bearings for the global automotive industry. "
+      },
+      {
+        "name": "Continental AG",
+        "summary": "Continental AG (Continental Automotive Canada Inc.) performs powertrain R&D in Ontario. The company succesfully completed North America's first autonomous vehicle cross-border drive."
+      },
+      {
+        "name": "Mahle GmbH",
+        "summary": "Mahle GmbH, one of the top 20 global OEM suppliers, manufactures filter systems and installs front-end modules in Ontario for Chrysler."
+      },
+      {
+        "name": "Robert Bosch GmbH",
+        "summary": "Bosch's ETAS acquired Ontario's Trustpoint Innovation Technologies, a leader in specialized expertise and technology in secure Machine-to-Machine (M2M) communication in the Internet of Things (IoT). "
+      },
+      {
+        "name": "Chemetall",
+        "summary": "Chemetall focusses on the chemical treatment of metal surfaces. Chemetall, with a manufacturing facility in Brampton, immerses itself in the development and implementation of customized technology solutions in surface treatment."
+      },
+      {
+        "name": "Kirchoff Automotive GmbH",
+        "summary": "Kirchoff Automotive, located in Aurora is a full-service supplier for complex metal and hybrid structures in body-in-white, crash management systems, chassis applications and cross car beams, with core competencies in lightweight design."
+      },
+      {
+        "name": "Henkel",
+        "summary": "Henkel, located in Mississauga, is the global leader in adhesive, sealant and functional coating technologies for the automotive industry.  Henkel's products can be used on a wide variety of car parts, varying from the body-in-white to the electronics to the powertrain."
+      },
+      {
+        "name": "Erwin Hymer Group",
+        "summary": "Erwin Hymer Group's Roadtrek is North America's leading manufacturer of Class B motorhomes. The company is testing its AV capabilities on Ontario's roads, making use of Ontario's AV testing regulations. "
+      },
+      {
+        "name": "TUV SUD Inc.",
+        "summary": "TUV SUD Canada in Gormley and Newmarket, provides a broad range of testing, inspection, and registration services, including safety testing and product certification, battery testing, automotive testing and more."
+      },
+      {
+        "name": "SICK AG",
+        "summary": "SICK Canada Inc.'s head office is in Richmond Hill. SICK Inc. is a global manufacturer of sensors and sensor solutions for industrial applications, including the automotive manufacturing sector, developing technologies that are key to Industry 4.0."
+      },
+      {
+        "name": "ZF Friedrichshafen AG",
+        "summary": "ZF's Ontario operation (TRW Limited) manufactures front and rear axle systems, automatic transmissions and active and passive safety systems for the automotive industry."
+      },
+      {
+        "name": "Siemens (Ruggedcom)",
+        "summary": "Siemens' Ruggedcom is a communication technology provider that prides itself on its durable equipment. Siemens is working with Tampa on the USDOT Joint project office for their DSRC project. They have an Ontario presence with a factory in Vaughan."
+      },
+      {
+        "name": "Berger Holding GmbH & Co. KG",
+        "summary": "In Ontario, A. Berger Precision Ltd. produces precision components for the automotive industry, including fuel injection high-pressure pumps, turbochargers, master brake cylinders, and more."
+      },
+      {
+        "name": "PTV Group",
+        "summary": "Global leader in providing services in the field of software and data. Provides services in the fields of Transportation Modeling, Traffic Simulation and Optimization, with a location in Toronto."
+      }
+    ]
+  },
+  {
+    "name": "India",
+    "lat": "20.5937",
+    "lng": "78.9629",
+    "children": [
+      {
+        "name": "Wipro",
+        "summary": "Wipro is an informations technology services corporation headquartered in India. With an office in Mississauga, Wipro intends on intesifying its focus of sustainable growth in North America."
+      },
+      {
+        "name": "Hi-Tech Gears Limited",
+        "summary": "In 2016, Hi-Tech Gears Limited (Teutech Industries Inc.) invested over $10M in its Guelph facility which produces steering, transmission, and driveline components."
+      },
+      {
+        "name": "HRS Flow",
+        "summary": "HRS Flow, which has a manufacturing facility in Windsor, creates automotive parts, both exterior and interior, offering high design flexibility while still ensuring reliability over time. The majority of HRS Flow's products focus on lighting and the manifold. "
+      }
+    ]
+  },
+  {
+    "name": "Israel",
+    "lat": "31.0461",
+    "lng": "34.8516",
+    "children": [
+      {
+        "name": "TEVA",
+        "summary": " “Not only do we feel Teva Canada is well-positioned here in Ontario, but we believe we'll experience sustained growth, serving not only the market in Canada but also North America and Europe.” Teva Canada's Head of Operations, Paolo Fiorino"
+      }
+    ]
+  },
+  {
+    "name": "Switzerland",
+    "lat": "46.8182",
+    "lng": "8.2275",
+    "children": [
+      {
+        "name": "Roche",
+        "summary": "“Ontario’s strategic priority in the life sciences is clear. It’s easy to align ourselves with the Ontario government’s innovation agenda, promoting excellence in research and investing in global opportunities. It makes Ontario an attractive jurisdiction to invest in as well as an attractive partner.” – Ronnie Miller, Roche Canada President and CEO"
+      },
+      {
+        "name": "Autoneum Holding Ltd.",
+        "summary": "Autoneum Holding Ltd. (Autoneum Canada Ltd.) manufactures noise reduction and heat shield components for vehicles."
+      },
+      {
+        "name": "STMicroelectronics",
+        "summary": "STMicroelectronic, with offices in both Toronto and Ottawa, provides leading-edge semiconductor solutions that support automakers and their electronic system suppliers drive the evolution of car technology, including active & passive safety; hybrid electric vehicles; infotainment & telematics and more."
+      },
+      {
+        "name": "ABB",
+        "summary": "Sheridan College and ABB Canada created a new Robotics Centre in the Centre for Advanced Manufacturing and Design Technologies (CAMDT), located at Sheridan’s Davis Campus in Brampton, Ontario. "
+      },
+      {
+        "name": "Balluff",
+        "summary": "Baluff, located in Mississauga, has a variety of products including sensors and systems for linear displacement measurement, identification, object detection and fluid measurement, including network and connection technology and extensive accessories."
+      },
+      {
+        "name": "TE Connectivity",
+        "summary": "Tyco Electronics (TE) Connectivity, which is in Markham, manufactures a vast amount of products for automotives including antennas, harnessing, sensors, power systems, relays, connectors and wiring and cables. "
+      },
+      {
+        "name": "Hoerbiger Holding AG",
+        "summary": "Hoerbiger, with a stamping location in Waterloo, produces a wide variety of products, ranging from synchronizers for transmissions to hydraulic drives for convertible tops to actuators for vehicle doors. Innovations in attractive technological market niches are the basis for components offered by Hoerbiger."
+      },
+      {
+        "name": "Nestlé",
+        "summary": "Manufacturing began in Canada in 1918 with the purchase of a small milk factory in Chesterville, Ontario. Four years later, the company was incorporated as Nestlé's Food Company of Canada Limited. Today, Nestlé in Canada employs approximately 3,500 people in over 20 manufacturing, sales and distribution sites across the country, with the home office located in North York, Ontario."
+      }
+    ]
+  },
+  {
+    "name": "Italy",
+    "lat": "41.8719",
+    "lng": "12.5674",
+    "children": [
+      {
+        "name": "Gnutti Carlo",
+        "summary": "Gnutti Carlo Canada, with a facility in Huron Park, manufactures a wide variety of automotive parts including rocker arms, valve lifters and bridges, fuel injection components, shaft and castings. They maintain a wide variety of customers including Ford, Cummins, Daimler, BMW and Mahindra."
+      },
+      {
+        "name": "Ferrero",
+        "summary": "It was in 1974 that Ferrero Canada first opened for business in Toronto, Ontario. Over the years the brands such as NUTELLA®, FERRERO ROCHER®, FERRERO COLLECTION, RAFFAELLO, TIC TAC®, KINDER®, KINDER BUENO and KINDER® CHOCOLATE were introduced to the Canadian consumers. They have a confectionary plant in Brantford, Ontario. "
+      },
+      {
+        "name": "CIMA Belfin",
+        "summary": "CIMA Belfin's Canadian facility in Woodbridge (BENA Fastenings Inc.) produces clamps, springs, shock-absorbers, and fastenings for the automotive industry."
+      }
+    ]
+  },
+  {
+    "name": "Quebec",
+  "lat": "46.8139",
+  "lng": "-71.2080",
+    "children": [
+      {
+        "name": "CGI",
+        "summary": "CGI's transportation business delivers innovative IT solutions that improve process efficiencies, optimize passenger experience, enhance cybersecurity, increase regulatory compliance and much more. CGI has four offices throughout Ontario."
+      },
+      {
+        "name": "Infasco",
+        "summary": "Based in Ontario, Infasco Nut is a world class supplier of specialty nuts, including prevailing torque nuts, nut and washer assemblies, non-rotation nut assemblies and other specialty fasteners to the automotive industry."
+      }
+    ]
+  },
+  {
+    "name": "Alberta",
+    "lat": "53.9333",
+    "lng": "-116.5765",
+    "children": [
+      {
+        "name": "Suncor",
+        "summary": "In 1967, Suncor pioneered the commercial development of Canada's oil sands – one of the largest petroleum resource basins in the world. "
+      },
+      {
+        "name": "Imperial Oil",
+        "summary": "Imperial’s Sarnia, Ontario operations include a world-class facility focused on supporting customers, developing and improving petroleum products and providing new technologies to improve environmental performance."
+      },
+      {
+        "name": "Shell Canada",
+        "summary": "Shell's Sarnia Manufacturing Centre (SMC), also referred to as Shell's Corunna Refinery, is located about 10 kilometres south of Sarnia, Ontario. Originally built in 1952 by Canadian Oil Companies Limited, the refinery became part of Shell’s operations in 1963 when Shell purchased Canadian Oil.  "
+      }
+    ]
+  },
+  {
+    "name": "Japan",
+    "lat": "36.2048",
+    "lng": "138.2529",
+    "children": [
+      {
+        "name": "JTEKT Corporation",
+        "summary": "Located in Mississauga, Ontario, JTEKT's Koyo Canada Inc. manufactures ball, needle and roller bearings."
+      },
+      {
+        "name": "Mitsui High-tec, Inc.",
+        "summary": "In 2016, Mitsui High-tec invested $38M to produce electric and hybrid vehicle parts in Ontario."
+      },
+      {
+        "name": "Toyotetsu Canada Inc.",
+        "summary": "Toyotestu is a direct supplier to Toyota, including facilities in Woodstock and Cambridge and across the globe, with a wide variety of products including body, chassis and functional parts."
+      },
+      {
+        "name": "Asahi Holdings",
+        "summary": "Asahi Holdings (Niagara Investment Castings) has been providing high quality castings in Ontario for over 60 years."
+      },
+      {
+        "name": "Musashi Seimitsu",
+        "summary": "Musashi Auto Parts, located in Waterloo, produces a vast amount of parts that are required in the powertrain assembly as well as linkage and suspension system. Musashi is continuously finding methods to lower costs, including the establishment of tooth profile precision forging technology. "
+      },
+      {
+        "name": "Mitsubishi Chemicals",
+        "summary": "Mitsubishi's Quadrant Plastics, located in Guelph, is a leading global manufacturer of high-performance, lightweight thermoplastic materials in the form of semi-finished products and finished parts. Quadrant is continuously developing new areas of applications in close cooperation with industry leaders in a broad variety of customer markets."
+      },
+      {
+        "name": "Moriroku Technology",
+        "summary": "Moriroku Technology's Listowel Technology, based in Ontario, is a world class automotive supplier with advanced capabilities from product design to prototyping to mass production of high quality automotive parts."
+      },
+      {
+        "name": "TRQSS, Inc. (Toka Rika Group)",
+        "summary": "TRQSS Inc.'s Ontario facility manufactures and markets automotive seat belts including buckles and a motorized retractor for a pre-crush safety system."
+      },
+      {
+        "name": "Nifast Corporation",
+        "summary": "Located in Ingersoll, Nifast Canada Corporation specializes in fastening components and automobile parts. Nifast inherits the strength of iron and steel expertise from Metal One, Mitsubishi and Sojitz. "
+      },
+      {
+        "name": "INOAC",
+        "summary": "INOAC's automotive division, located in both St. Marys and Etobicoke, is a general supplier of various automobile materials and components, offering funtionally sophisticated plastic products. One of the leading products are their technical foams that have great versatility and flexibility while staying lightweight. "
+      },
+      {
+        "name": "Mitsubishi Electric",
+        "summary": "Mitsubishi’s autonomous technology is based on artificial intelligence (AI) and the company’s own Mobile Mapping System (MMS). Different from other mapping and GPS systems, autonomous systems like the MMS, develop 3D maps based on the vehicle’s surroundings. Then, in tandem with artificial intelligence, Mitsubishi’s MMS offers constant information as it changes, such as traffic signals, surrounding vehicles, and other variables for safe and precise autonomous driving. Mitsubishi Electric has a sales office located in Markham."
+      },
+      {
+        "name": "Jefferson Elora Corporation",
+        "summary": "Jefferson Elora (G-Tekt) is an exclusive body frame and transmission component manufacturer. G-Tekt, found in Elora, is involved in the start of new automobile development by automobile manufacturers, providing a total component production system."
+      },
+      {
+        "name": "NTN Corporation",
+        "summary": "NTN Corporation, with two locations in Mississauga, is number one in global market share for axle bearings. NTN is stepping up the development of smaller and lighter bearings, as well as modular products for electric vehicles."
+      },
+      {
+        "name": "Toyoda Gosei Co.",
+        "summary": "Toyoda Gosei produces parts such as instrument panels, pillar garnishs and column covers to be used in the manufacturing of Toyota vehicles in Ontario."
+      },
+      {
+        "name": "Toyota Boshoku Corp.",
+        "summary": "Toyota Boshoku supplies Toyota Motor Manufacturing Canada with seat components, door trim, headliners, illuminations and exterior components."
+      },
+      {
+        "name": "Toyota",
+        "summary": "Toyota Motor Manufacturing Canada Inc. has three plants in southwestern Ontario that produce the Corolla, RAV4 and Lexus RX350 and RX450h."
+      },
+      {
+        "name": "Honda",
+        "summary": "Honda is spending more than $400 million to upgrade its Ontario facilities to build new models of the Civic and the CR-V."
+      },
+      {
+        "name": "Mitsubishi Heavy Industries",
+        "summary": "Mitsubishi Heavy Industries Canada has a state-of-the-art wing and fuselage manufacturing facility with a highly skilled workforce in Mississauga, Ontario."
+      },
+      {
+        "name": "Hayashi Telempu Co. Ltd.",
+        "summary": "Hayashi Telempu Co. Ltd. (Hayashi Canada Inc.) manufactures soft interior trim components for Toyota and Honda in Stratford, Ontario."
+      },
+      {
+        "name": "Denso Corp.",
+        "summary": "Denso Corp. (Denso Manufacturing Canada, Inc.) produces HVAC, structural, and other components across its Ontario manufacturing facilities for OEMs including Toyota, Lexus, Honda, Acura, Ford, and Lincoln."
+      },
+      {
+        "name": "F-Tech Inc.",
+        "summary": "F-Tech (F&P Manufacturing Inc.) has two facilities in Ontario that specialise in automotive metal forming, welding, painting, and assembly for OEMs including Honda, Toyota and GM."
+      },
+      {
+        "name": "Futaba Corp.",
+        "summary": "Futaba (FIO Automotive Canada Corp.) produces body parts and instrument panel reinforcements in Ontario."
+      },
+      {
+        "name": "Kumi Kasei Co., Ltd.",
+        "summary": "Kumi Canada Corporation produces plastic and interior parts for Honda in Ontario."
+      },
+      {
+        "name": "AGC Automotive",
+        "summary": "AGC Automotive Canada Inc., in Bradford, specializes in all types of automotive glass. Select specialities include tempered glass, laminated glass, privacy glass, heads-up display, light control, water-repellent glass and lightweight glazing."
+      },
+      {
+        "name": "Hino",
+        "summary": "Hino assembles light and medium duty trucks in its Ontario facility."
+      },
+      {
+        "name": "Howa Textile Industry Co., Ltd.",
+        "summary": "In 2015, Howa Textile Industry Co. Ltd. (Howa Canada Manufacturing Inc.) invested over $11M in a new manufacturing facility in Ontario to supply interior components to Honda."
+      }
+    ]
+  },
+
+  {
+    "name": "Luxembourg",
+    "lat": "49.6116",
+  "lng": "6.1319",
+    "children": [
+      {
+        "name": "ArcelorMittal",
+        "summary": "ArecelorMittal Dofasco's products, manufactured in Hamilton, have a wide range of automotive applications, including interiors, exteriors, bumpers, brakes, wheels, as well as drivetrain, structural, and suspension components."
+      }
+    ]
+  },
+  {
+    "name": "Maryland",
+    "lat": "39.0458",
+  "lng": "-76.6413",
+    "children": [
+      {
+        "name": "Lockheed Martin",
+        "summary": "Lockheed Martin Canada’s IMPACT Centre in Kanata, Ontario is designed to kick-start R&D and technical education in a collaborative setting."
+      }
+    ]
+  },
+  {
+    "name": "Ohio",
+    "lat": "40.4173",
+  "lng": "-82.9071",
+    "children": [
+      {
+        "name": "Procter & Gamble",
+        "summary": "P&G owns dozens of the world's top brands of consumer products. P&G Canada has its Canadian headquarters, two manufacturing facilities, and a distribution centre all located in Ontario."
+      },
+      {
+        "name": "Freeway Corp.",
+        "summary": "With Canadian operations in Toronto, Freeway Ltd. manufactures thousands of different washers, brackets, seals, and covers for the automotive industry."
+      },
+      {
+        "name": "KTH Parts Industries Inc.",
+        "summary": "In 2016, KTH Parts Industries Inc. (KTH Shelburne MFG. Inc.) invested over $11M in new stamping and welding equipment to expand its current facility in Ontario."
+      },
+      {
+        "name": "Dana Holding Corp.",
+        "summary": "Dana Holding Corp. produces driveline, sealing, and thermal-management products and has five facilities across Ontario."
+      },
+      {
+        "name": "Ernie Green Industries, Inc.",
+        "summary": "Ernie Green Industries, located in Stratford, has been a leader in the manufacturing of plastic injection molded parts and assemblies for over 30 years. Expertise in chrome plating, wheel trim and decorative aluminum allows Ernie Green to provide turnkey solutions that supports customers in advancing their products. "
+      },
+      {
+        "name": "MetoKote Corp",
+        "summary": "MetoKote, with a location in Cambridge, offers a full range of high-technology custom coating services including electrocoating, power coating, liquid paint and various other custom coatings. All coatings offered by MetoKote are environmentally sound throughout the entire project life cycle. "
+      },
+      {
+        "name": "PM plastics",
+        "summary": "PM Plastics specializes in custom plastic injection moulding and manufacturing. As a part of the Crowne Group, the Windsor location is able to provide services and products to automotive suppliers across North America."
+      },
+      {
+        "name": "Goodyear Tire & Rubber Co.",
+        "summary": "Goodyear Tire & Rubber Co. (Goodyear Canada Inc.) employs 800 Ontarians in tire manufacturing."
+      }
+    ]
+  },
+  {
+    "name": "Michigan",
+    "lat": "44.3148",
+  "lng": "-85.6024",
+    "children": [
+      {
+        "name": "Adient",
+        "summary": "Adient's Ontario facility manufactures polyurethane seating foam for global automakers."
+      },
+      {
+        "name": "Ford",
+        "summary": "Ford is hiring 300 engineers to create a new connected vehicle R&D Centre in Ottawa, Ontario. Ford relies on Ontario-based Multimatic to produce the Ford GT Supercar."
+      },
+      {
+        "name": "Anderson-Cook Inc.",
+        "summary": "Anderson-Cook Inc. manufactures and supplies seating mechanism and powertrain components as well as machines tools to automotive industries worldwide. Anderson-Cook has a manufacturing location in Stratford."
+      },
+      {
+        "name": "ACAT Global LLC",
+        "summary": "ACAT stands for Advanced Clean Air Technology. In Ontario, ACAT Exhaust Inc. manufactures high performance exhaust systems with emissions reduction elements such as diesel mixers, specialty catalytic converters and diesel oxidation catalysts which help automakers achieve emissions reductions and greater fuel efficiency of up to 25%."
+      },
+      {
+        "name": "Android Industries L.L.C.",
+        "summary": "Android Industries is a leader in complex assembly, tooling and equipment solutions for the automotive industry. The company, which has a facility in Brampton, has developed a signature product and globally patented process for tire and wheel assembly."
+      },
+      {
+        "name": "Oakley Industries Sub Assembly Division, Inc.",
+        "summary": "Oakley Industries Sub Assembly has two locations in Ontario, they supply product assemblies for Chrysler and Dodge vehicles."
+      },
+      {
+        "name": "Henniges Automotive",
+        "summary": "Henniges Automotive Schlegel Canada Inc., found in Burlington, provides world class vehicle sealing and anti-vibration solutions."
+      },
+      {
+        "name": "Kellogg",
+        "summary": "More than 100 years ago, W.K. Kellogg founded the company through his belief in nutrition and dedication to well-being. Their Canadian operations are located in Mississauga with a cereal plant in Belleville, Ontario.  "
+      },
+      {
+        "name": "GM",
+        "summary": "GM has chosen Ontario to develop its autonomous cars of the future, adding 700 engineers over the next few years."
+      },
+      {
+        "name": "Cooper-Standard Automotive",
+        "summary": "Cooper standard produces anti-vibration, sealing, fluid transfer, and fuel & brake delivery systems at its Ontario facilities."
+      },
+      {
+        "name": "Gentherm",
+        "summary": "Gentherm is recognized by automotive industry customers as an outstanding suppplier of heated/climate seating, electronics and cables. Their world-class team of scientists and engieneers are dedicated to the continuous advancement of thermoelectrics for heating, cooling and power generation."
+      },
+      {
+        "name": "DURA",
+        "summary": "DURA Automotive Systems, located in Dundalk, is a leading independent designer and manufacturer of driver control systems, seating control systems, safety hardware, structural body systems, exterior trim and integrated glass systems. DURA markets automotive parts to every OEM in the Americas, Asia and Europe. "
+      },
+      {
+        "name": "Inteva Products LLC",
+        "summary": "Inteva Products is a Tier 1 supplier that produces cockpit and headliner assemblies in Ontario for General Motors."
+      },
+      {
+        "name": "Lear Corporation",
+        "summary": "Lear Corporation, a top ten global OEM supplier, manufactures automotive seats in two Ontario facilities."
+      },
+      {
+        "name": "Visteon Corp.",
+        "summary": "Visteon is at the epicenter of the connected car driving revolution, with one of the broadest cockpit electronics portfolios in the industry. Visteon, located in Belleville, designs, engineers and manufactures vehicle cockpit electronics products and connected car solutions that deliver a rich, connected experience for drivers and passengers."
+      },
+      {
+        "name": "Meridian Lightweight Technologies",
+        "summary": "Ontario is home to Meridian's Global Technology Centre where the company explores the engineering and design boundaries of thin wall magnesium die casting and develops applications for the automotive industry worldwide."
+      }
+    ]
+  },
+  {
+    "name": "Netherlands",
+    "lat": "52.1326",
+  "lng": "5.2913",
+    "children": [
+      {
+        "name": "Gemalto",
+        "summary": "A world leader in digital security. Gemalto delivers easy to use technologies and services to businesses and governments, authenticating identities and protecting data so they stay safe and enable services in personal devices, connected objects and the cloud.  Gemalto has two offices in Ontario, Ottawa and Burlington, to offer such services to Canadians."
+      },
+      {
+        "name": "NXP",
+        "summary": "From microcontrollers and processors to sensors, analog Ics and connectivity, NXP's technologies are fueling innovation in the automotive industry. The NXP Ottawa Technology Center is focussed on software and silicon IP development as well as autonomous vehicles and ADAS."
+      },
+      {
+        "name": "Irdeto",
+        "summary": "Irdeto provides secure, tamper-proof, cybersecurity solutions for OEMs and Tier-1 automotive suppliers. Irdeto has a facility located in Kanata."
+      },
+      {
+        "name": "Unilever",
+        "summary": "Unilever is a consumer goods company headquartered in The Netherlands, with products such as Ben and Jerry's, Dollar Shave Club and A&W. Unilever Canada was selected as one of Greater Toronto's Top Employers in 2017. "
+      }
+    ]
+  },
+  {
+    "name": "Illinois",
+    "lat": "41.4331",
+    "lng": "-89.3985",
+    "children": [
+      {
+        "name": "Precision Partners",
+        "summary": "In 2016, Precision Partners (Electromac Group) invested over $15M to expand its facility and install three hot stamping production lines."
+      },
+      {
+        "name": "Tenneco Inc.",
+        "summary": "From small cars to SUVs to luxury limousines, Tenneco offers a wide range of ride performance products and technologies. The Owen Sound facility produces ride control equipment such as shock absorbers."
+      },
+      {
+        "name": "Amsted Industries",
+        "summary": "Transform Automotive, a subsidiary of Amsted Industries, is an industry leader in the manufacturing of precision powertrain and engine components. The company, which is located in London, is involved in signifcant advanced research and application of tooling and die equipment, process deisgn and development."
+      },
+      {
+        "name": "Mercury Products Corporation",
+        "summary": "Mercury Products provides engineered fabrications for automotives relating to exhaust system and filtration equipment. Mercury Products, which has a location in Windsor, performs various services to accommodate to product specifications. "
+      },
+      {
+        "name": "JD Norman Industries Inc.",
+        "summary": "In 2016, JD Norman Industries Inc. (JD Norman Canada ULC) invested in new equipment to improve product quality and ramp-up production of connecting rods."
+      },
+      {
+        "name": "Flex-N-Gate",
+        "summary": "In 2016, Ventra Group (Flex-N-Gate) invested over $35M in new equipment and 25 new paint robots in Ontario."
+      },
+      {
+        "name": "Blachford",
+        "summary": "In Mississauga, Ontario, H.L Blachford Ltd. manufactures a variety of noise control products for the transportation industry."
+      }
+    ]
+  },
+  {
+    "name": "Portugal",
+    "lat": "39.3999",
+    "lng": "-8.2245",
+    "children": [
+      {
+        "name": "Sodecia London Inc.",
+        "summary": "Sodecia is an industrial corporation operating worldwide as a full service supplier in the chassis, powertrain and body-in-white commodities. London is home to both a large-scale production plant as well as a global tech and automation center."
+      }
+    ]
+  },
+  {
+    "name": "Kentucky",
+    "lat": "37.8393",
+    "lng": "-84.2700",
+    "children": [
+      {
+        "name": "Steel Technologies LLC",
+        "summary": "Steel Technologies offers a wide variety of steel and steel services, including hold and hot rolled, high strength and low carbon steel as well as aluminum. Facilities in Cambridge and Woodstock offer slitting and in-line double-sided inspection."
+      }
+    ]
+  },
+  {
+    "name": "Northern Ireland",
+    "lat": "54.7877",
+    "lng": "-6.4923",
+    "children": [
+      {
+        "name": "Thales Group",
+        "summary": "Thales in Canada has 1,800 employees across Canada, including Ottawa and Toronto, working in Defence, Avionics and Transportation markets. Thales in Canada is a $500 million (CAD) a year business."
+      }
+    ]
+  },
+  {
+    "name": "North Carolina",
+    "lat": "35.7596",
+  "lng": "-79.0193",
+    "children": [
+      {
+        "name": "Dynacast International Inc",
+        "summary": "Dynacast International's Peterborough facility is known for its multi-slide technology, standard die casting with integrated automation, and Injected Metal Assembly precision zing manufacturing."
+      }
+    ]
+  },
+  {
+    "name": "Indiana",
+    "lat": "40.2672",
+    "lng": "-88.1349",
+    "children": [
+      {
+        "name": "Arvin Sango Canada Inc.",
+        "summary": "Arvin Sango, located in London, has specialized technology for automotive exhaust system products. Arvin Sango has been recognized, both domestically and overseas, as an \"approved drawings\" manufacturer. "
+      },
+      {
+        "name": "Accuride Corporation",
+        "summary": "Accuride Corporation is a manufacturer and supplier of wheels and wheel-end components in North American and European commercial vehicle markets. Accuride, with a manufacturing location in London, is the indutry's #1 single-source wheel-end solutions provider of both steel and aluminum wheels."
+      }
+    ]
+  },
+  {
+    "name": "Missouri",
+    "lat": "37.9643",
+    "lng": "-91.8318",
+    "children": [
+      {
+        "name": "Leggett and Platt Automotive Group",
+        "summary": "Leggett and Platt Automotive Group has numerous locations spread across southwestern Ontario and is a world leader in automotive seating comfort systems and suspension components. Leggett and Platt is a global provider of wire forms, mechanical control cables, wireless charging and seat lumbar, suspension, bolster, actuator and motor systems. "
+      },
+      {
+        "name": "Electrical Components International",
+        "summary": "Electrical Components International produces wire harnesses and leads, complex harness subassemblies, radiant glass heaters, power cords and electro-mechanical assemblies at their location in Tillsonburg."
+      }
+    ]
+  },
+  {
+    "name": "Oklahoma",
+    "lat": "35.0078",
+    "lng": "-97.0929",
+    "children": [
+      {
+        "name": "Miratech Corp.",
+        "summary": "Miratech is an industry leader that provides cost-effective, reliable and mission critical emission and acoustical solutions. Miratech, located in Pickering, offers catalysts, housings, silencers and related services to reduce engine exhaust pollutants such as Nox, CO, VOC and others."
+      }
+    ]
+  },
+  {
+    "name": "Singapore",
+    "lat":"1.3521",
+    "lng": "103.8198",
+    "children": [
+      {
+        "name": "Flex Ltd.",
+        "summary": "Flex, a company that specialises in autonomous vehicle technologies, has four locations in Ontario that perform manufacturing, as well as design, engineering consulting, and logistics services."
+      }
+    ]
+  },
+  {
+    "name": "South Korea",
+    "lat": "35.9078",
+  "lng": "127.7669",
+    "children": [
+      {
+        "name": "CS Automotive Tubing Inc.",
+        "summary": "CS Automotive Tubing has a manufacturing location in London and is a leading manufacturer of stainless steel tubing that has high corrosion resistance to automotive exhaust and fuel. "
+      }
+    ]
+  },
+  {
+    "name": "Sweden",
+    "lat":"60.1282",
+    "lng": "18.6435",
+    "children": [
+      {
+        "name": "Autoliv Inc.",
+        "summary": "Autoliv is a leader in active and passive safety systems, including: radar, vision and night vision systems, active seatbelts, brake systems, airbags, child restraints, pedestrian protection and more. Autoliv has three manufacturing facilities throughout Ontario."
+      }
+    ]
+  },
+  {
+    "name": "Tennessee",
+    "lay": "35.5175",
+  "lng": "-86.5804",
+    "children": [
+      {
+        "name": "Transcore",
+        "summary": "TransCore designs and deploys traffic management systems for agencies across North America and internationally. In addition they create RFID systems secure access for tolling facilities, airports, hospitals, parking garages, border patrols, trucking fleets, and the rail industry."
+      }
+    ]
+  },
+  {
+    "name": "Texas",
+    "lat": "31.9686",
+  "lng": "-99.9018",
+    "children": [
+      {
+        "name": "Peek Traffic Corporation",
+        "summary": "Peek Traffic Corporation specializes in service, and providing products for Data & AVCC, Traffic Control, Traffic Signals, Video Detection, UPS Products, and various Software. "
+      }
+    ]
+  },
+  {
+     "name": "Hong Kong",
+     "lat": "22.3964",
+     "lng": "114.1095",
+     "children": [
+      {
+        "name": "Johnson Electric Group",
+        "summary": "Stackpole, a subsidiary of Johnson Electric Group, is a powertrain systems and components supplier with multiple locations in Ontario."
+      }
+    ]
+   },
+   {
+      "name": "Delaware",
+      "lat": "38.9108",
+      "lng": "-75.5277",
+      "children": [
+      {
+        "name": "DuPont",
+        "summary": "DuPont has four locations in Ontario. DuPont provides automotive solutions across eight themes: sustainability; alternative drive; lightweighting; improved performance; powertrain efficiency; total system cost; safety; and comfort & design."
+      }
+      ]
+    },
+    {
+      "name": "Mexico",
+      "lat": "23.6345",
+      "lng": "-102.5528",
+       "children": [
+       {
+         "name": "Nemak",
+         "summary": "Nemak develops lightweight automotive engines at its Ontario facilitiesusing innovative automated robotic systems and lightweight aluminum materials."
+       }
+       ]
+     },
+     {
+       "name": "Washington",
+       "lat": "47.7511",
+       "lng": "-120.7401",
+       "children": [
+         {
+           "name": "Amazon",
+           "summary": "Amazon's R&D Centre in Toronto contributes to some of its highest-priority global technology development projects, including Amazon Fulfillment Technologies and the voice-controlled intelligent personal assistant Alexa."
+         },
+         {
+           "name": "Microsoft",
+           "summary": "Microsoft's Canadian head office is located in Mississauga, Ontario."
+         }
+       ]
+       },
+       {
+          "name": "Oregon",
+          "lat": "43.8041",
+          "lng": "-120.5542",
+          "children": [
+          {
+            "name": "Traffic Technology Services",
+            "summary": "Traffic Technology Services Inc. (TTS) is a technology company and information provider to the automotive industry, commercial fleets and telematics integrators, for connected vehicle applications. In Ontario, TTS is applying their V2I, and I2V technology with the EcoDrive Project."
+          }
+          ]
+        },
+        {
+           "name": "Minnesota",
+           "lat": "46.7296",
+           "lng": "-94.6859",
+           "children": [
+           {
+             "name": "3M",
+             "summary": "3M provides a range of solutions for the automotive industry, including collision repair, DIY auto care and paint protection film products.  3M has four manufacturing facilities in Ontario and its Canadian head office is in London, ON."
+           }
+           ]
+         }
+
+]

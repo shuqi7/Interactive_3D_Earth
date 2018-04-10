@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sidebar.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/globe.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+    <script type="text/javascript">
+      var allCompanies = null;
+      $.ajaxSettings.async = false;
+      $.getJSON("data.json", function(json) {
+        allCompanies = json;
+        console.log(allCompanies.length);
+      });
+    </script>
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+    <!-- for pre-loading -->
+    <div class="se-pre-con"></div>
+    <!-- ************* -->
+
+    <section class="container-fluid">
+      <div class="row align-items-center justify-content-center d-flex flex-wrap" id="contentWrapper">
+        <div class="col-xl-5 ">
+
+          <div id="sidebar">
+            <div class="d-lg-block" id="logoContainer">
+              <img src="http://www.investinontario.com/./sites/default/themes/invest2018/images/ontario-canada-wtwig.svg" alt="Ontario_Invesment_Office_Logo" class="img-fuild logo"/>
+            </div>
+            <div id="contentContainer">
+              <h1 id="countryName"></h1>
+
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 720 58.2" style="margin-top: -11px;" xml:space="preserve">
+                <style type="text/css">
+                                .st0{fill:none;stroke:#FFFFFF;}
+                                .st1{fill:#FFFFFF;}
+                </style>
+                <polyline class="st0" points="-1,54.7 683,54.7 718.1,6 "/>
+                <path class="st1" d="M718.1,8c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2c-1.1,0-2,0.9-2,2C716.1,7.1,716.9,8,718.1,8"/>
+              </svg>
+
+              <ul id="companyList">
+              </ul>
+            </div>
+            <div id="scrollArrows">
+			    <i class="fas fa-angle-up"></i>
+			    <i class="fas fa-angle-down"></i>
+			</div>
+          </div>
+
+        </div>
+        <div class="col-xl-7  d-flex" id="globeContainer">
+            <!-- globe -->
+            <div class="globe js-globe justify-content-center">
+          		<ul class="globe-list js-list"></ul>
+          		<canvas class="globe-canvas js-canvas"></canvas>
+          		<div id="top-glow">
+          			<!-- <img id="top-glow-pic" src="globe-topglow.png"> -->
+          		</div>
+          	</div>
+
+        </div>
+      </div>
+      <div id="functions">
+      	<div class="wtwig-button-new light-grey">
+          <button id="changeBackgroundButton">
+            Change Background
+          </button>
+        </div>
+        <div class="wtwig-button-new light-grey">
+          <button id="changeFullScreenButton">
+              Enter FullScreen
+          </button>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/90/three.js"></script>
+  	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/617753/ThreeOrbitControls.js"></script>
+  	<script src="https://rawgit.com/spite/THREE.MeshLine/master/src/THREE.MeshLine.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
