@@ -846,7 +846,6 @@ $(window).on("load", function() {
       for (i=0; i < usaStates.length; i++) {
         state = document.querySelector(`.${usaStates[i]} span`);  //document.querySelector(".${usaStates[i]}");
         state.classList.remove('hide');
-        console.log(state);
       }
     }
   }
