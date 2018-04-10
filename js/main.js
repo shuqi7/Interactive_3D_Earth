@@ -440,7 +440,7 @@ $(window).on("load", function() {
 		var material = new THREE.LineBasicMaterial({
 			color: props.colours.lines,
 			opacity: props.alphas.lines,
-      linewidth: 20,
+      			linewidth: 5,
 		});
 
 		// Create the final object to add to the scene
