@@ -1,0 +1,294 @@
+body {
+  background-image: url(http://www.medi-library.com/salestoolkit/wp-content/uploads/2018/03/wtwig-background-purple.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height:100vh;
+}
+
+html{
+      font-family: 'Lato', sans-serif;
+      overflow-x: hidden;
+  }
+
+h2 {
+  font-weight: 100;
+  font-size: 1.9rem;
+}
+
+
+.col-lg-4{
+  z-index: 104;
+}
+#earthContainer{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#logoContainer{
+    /*margin-top: calc(((100% - 209px) / 2) + 180px);*/
+
+}
+
+.container-fluid{
+    min-height: 100%;
+    position: relative;
+}
+
+#contentWrapper{
+  padding-bottom: 80px;
+  height: 100vh;
+}
+
+.logo {
+  width: 30vw;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /*margin: 0 0 0 7vw;*/
+}
+
+.logoFixed img{
+
+  width: 200px;
+
+}
+
+.row{
+  height: 100vh;
+}
+
+#sidebar{
+  /*margin-top: calc(100% - 56vh);*/
+  margin: auto 0 auto 10vw;
+
+}
+
+.translateOut {
+
+  transition: 2s ease;
+}
+
+.translateIn {
+  transform: translateY(0%);
+  transition: 2s ease;
+}
+
+
+
+#contentContainer{
+  color: white;
+  padding: 0 35px;
+  width: 30vw;
+}
+
+#contentContainer svg{
+  display: none;
+}
+
+#companyList::-webkit-scrollbar {
+    display: none;
+}
+
+#companyList{
+  max-height: 60vh;
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px;
+}
+
+/*#companyList button{
+
+  border: 2px #FFF solid;
+  padding: 12px;
+  font-size: 1.4em;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  width: 97%;
+}*/
+#companyList li h2 {
+  border-bottom: 1px solid #ffffff36;
+  padding-bottom: 5px;
+  position: relative;
+  margin-right: 24px;
+}
+
+#companyList li h2:hover{
+  cursor: pointer;
+  color: #948888;
+}
+
+#companyList li div > div{
+  padding: 10px;
+  font-size: 20px;
+  margin-bottom: 5px;
+
+}
+
+#countryName{
+  font-size: 62px;
+  margin-bottom: -25px;
+}
+
+#companyList::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	border-radius: 10px;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+#companyList::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: rgba(255, 0, 0, 0);
+}
+
+#companyList::-webkit-scrollbar-thumb
+{
+	border-radius: 6px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: rgba(255,255,255,0.8);
+}
+
+
+.accordion-toggle {cursor: pointer;}
+.accordion-content {
+  display: none;
+  font-weight: 100;
+
+}
+.accordion-content.default {display: block;}
+
+h2.accordion-toggle:after {
+  content: attr(data-sign);
+  position: absolute;
+  right: -22px;
+  opacity: 0.5;
+}
+
+#functions {
+  position: absolute;
+  bottom: 20px;
+  right: 55px;
+}
+
+#functions button {
+  width: 200px;
+  background-color: transparent;
+  color: #fff;
+}
+
+#functions button:focus {
+  outline:0;
+}
+
+#functions .wtwig-button-new {
+    position: relative;
+    border-top: 0;
+    margin-top:10px;
+}
+
+.wtwig-button-new a,.wtwig-button-new button {
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.wtwig-button-new a::before,.wtwig-button-new button::before {
+    content: "";
+    background: url(https://www.investinontario.com/sites/default/themes/invest2018/images/wtwig-button-top.svg) no-repeat right -5px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+}
+
+.wtwig-button-new.light-grey {
+     border:1px solid #eeeeee;
+     border-top:0;
+}
+
+.wtwig-button-new.light-grey a,.wtwig-button-new.light-grey button {
+    color: #eeeeee !important;
+}
+
+
+/*for scrolling arrow*/
+
+#scrollArrows i{
+  display: block;
+}
+
+#scrollArrows i:hover {
+  cursor: pointer;
+}
+
+#scrollArrows {
+  display: none;
+  opacity: 0.7;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: 47%;
+  font-size: 49px;
+}
+
+@media only screen and (max-height: 1000px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+
+  body{
+    background-size: 460%;
+  }
+
+  #functions {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+    width: 90%;
+
+  }
+
+  #functions div{
+    display: inline-block;
+        margin-left: 10px;
+  }
+
+  #contentContainer {
+    width: 98%;
+  }
+
+  #contentWrapper {
+    height: auto;
+  }
+
+  #sidebar{
+    margin: auto;
+  }
+
+  #scrollArrows {
+    right: 20px;
+  }
+
+  #functions #logoContainer{
+    float: left;
+  }
+
+  #functions .wtwig-button-new {
+    float: right;
+  }
+}

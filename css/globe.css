@@ -1,0 +1,156 @@
+/*for loading*/
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/img/Preloader_2.gif) center no-repeat #fff;
+}
+
+/*#globeContainer{
+	height: 98vh;
+}*/
+
+.js-globe {
+		/*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+		width: 2000px;
+		height: 2000px;*/
+		/*margin-left: 50px;*/
+		position: relative;
+    margin: auto;
+    /*margin: auto 0 auto 150px;*/
+		height: inherit;
+	}
+
+	.js-list {
+		list-style-type: none;
+		margin: 0;
+	}
+
+	.js-list li:hover {
+		background: #d5cccc !important;
+		cursor: pointer;
+	}
+
+	.globe .globe-list > li {
+		opacity: 1;
+		border: 2px solid #383535;
+		position: absolute;
+		margin-left: -49px;
+		margin-top: -9px;
+		width: 14px;
+		height: 14px;
+		border-radius: 50%;
+		background: #ffffff;
+		/*@include transition(opacity 1s cubic-bezier(0.175, 0.885, 0.320, 1.275));*/
+		z-index: 51;
+	}
+
+	.globe .globe-list > li:before {
+		content: "";
+		opacity: 0.5;
+		pointer-events: none;
+		margin-left: -8px;
+		margin-top: -8px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #00FFD3;
+		animation:pulse 2s;
+		animation-iteration-count: infinite;
+		z-index: 52;
+}
+
+@keyframes pulse {
+	0% { transform: scale(1); }
+	50% { opacity: 0.5; }
+	100% { opacity: 0; transform: scale(2); }
+}
+
+	/*country text*/
+.globe .globe-list .text {
+	position: absolute;
+	opacity: 1;
+	right: 17px;
+	top: 50%;
+	display: block;
+	font-size: 13px;
+	line-height: 9px;
+	font-weight: 600;
+	text-align: right;
+	text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+	color: #fff;
+	white-space: nowrap;
+	transform: translateY(-50%);
+	width: auto;
+	height: 16px;
+	background-color: #0d0d0d;
+	padding: 2px;
+
+}
+
+
+
+.Ontario span, .California span, .Carolina span, .Jersey span, .Massachusetts span, .Germany span, .Austria span, .Delaware span, .Switzerland span, .Kingdoms span  {
+	/*font-size: 22px !important;*/
+	position: relative !important;
+  right: -18px !important;
+  text-align: left !important;
+  float: left !important;
+  top: -19px !important;
+}
+
+.Ontario {
+  width: 26px !important;
+  height: 26px !important;
+  background: #FFF !important;
+}
+
+.Ontario span{
+	font-size: 34px !important;
+  height: 30px !important;
+  line-height: 8px !important;
+  padding: 9px !important;
+  left: 27px !important;
+  top: -13px !important;
+  border-radius: 0px;
+}
+
+#top-glow {
+
+	position: absolute;
+	top: calc(-4% - 10px);
+	right: 0;
+	z-index: -1;
+	background-image: url(/img/globe-topglow.png);
+	background-size: 63%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.js-canvas {
+	z-index: 50;
+	cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+/*	position: absolute;
+	width: auto !important;
+	height: 97% !important;
+	margin-left: 100px;*/
+}
+
+	.labelClicked{
+		background: red !important;
+	}
+
+
+.hide {
+	display: none !important;
+}
