@@ -1,7 +1,7 @@
 # Interactive_3D_Earth
 
 
-** Link: https://shuqi7.github.io/Interactive_3D_Earth/
+** Live Site Link: https://shuqi7.github.io/Interactive_3D_Earth/
 
 
 * Interactive 3D Earth built based on Three.js and WebGL
