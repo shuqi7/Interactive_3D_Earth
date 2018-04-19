@@ -11,6 +11,14 @@ $(window).on("load", function() {
 	// Cache DOM selectors
 	var container = document.getElementsByClassName('js-globe')[0];
 
+  //Elements for shifting navbar
+  var mySidenav = document.querySelector("#mySidenav");
+  var contentWrapper = document.querySelector("#contentWrapper");
+  var navbarButton = document.querySelector("#nav-icon4");
+
+  var countryList = document.querySelector(".countryList");
+
+
 	// Object for country HTML elements and variables
 	var elements = {};
 
@@ -25,11 +33,7 @@ $(window).on("load", function() {
 
 	// Map properties for creation and rendering
 	var props = {
-		mapSize: {
-			// Size of the map from the intial source image (on which the dots are positioned on)
-			width: 2048 / 2,
-			height: 1024 / 2
-		},
+
 		globeRadius: 200, // Radius of the globe (used for many calculations)
 		colours: {
 			// Cache the colours
@@ -129,55 +133,11 @@ $(window).on("load", function() {
 		// Start the requestAnimationFrame loop
 		render();
 		animate();
-		var canvasResizeBehaviour = function() {
-			var topGlow = document.getElementById('top-glow');
-      var globeContainer = document.getElementsByClassName('js-globe')[0];
-      // console.log($(".js-globe").width());
-			// set the width and height of globe div
-			// container.height = window.innerHeight;
-			// container.style.width = container.width +  'px';
-			// 	container.style.height = container.width *0.85 + 'px';
-			// topGlow.style.width = container.width + 'px';
-			// topGlow.style.height = container.width * 0.85 + 'px';
+    checkScreenSize();
+    checkCountryList();
 
-      var currentWidth = $("#globeContainer").width();
-      var currentHeight = $("#globeContainer").height();
 
-			var width = window.innerWidth;
-			if (width <= 1150) {
-				// console.log(width);
-				container.width = currentWidth;
-        container.height = currentHeight *0.8;
-			} else {
-				container.width = currentWidth;
-        container.height = currentHeight;
-			}
-
-				container.style.width = container.width +  'px';
-			 	container.style.height = container.width *0.85 + 'px';
-				topGlow.style.width = container.width + 'px';
-				topGlow.style.height = container.width *0.85 + 'px';
-
-		 	// set the width and height of top glow div
-		 	//topGlow.style.width = container.style.width;
-
-			camera.object.aspect = container.offsetWidth / container.offsetHeight;
-			camera.object.updateProjectionMatrix();
-			renderer.setSize(container.offsetWidth, container.offsetHeight);
-		};
-
-		window.addEventListener('resize', canvasResizeBehaviour);
-		window.addEventListener('orientationchange', function() {
-			setTimeout(canvasResizeBehaviour, 0);
-		});
-
-		canvasResizeBehaviour();
-		checkScreenSize();
 	}
-
-
-
-
 
 	/* CAMERA AND CONTROLS */
 	function addCamera() {
@@ -192,12 +152,14 @@ $(window).on("load", function() {
 		camera.controls.enableKeys = false;
 		camera.controls.enablePan = false;
 		camera.controls.enableZoom = false;
-		camera.controls.enableDamping = false;
+		camera.controls.enableDamping = true;
+    camera.controls.dampingFactor = 0.15;
 		camera.controls.enableRotate = true;
+    camera.controls.rotateSpeed = 0.25;
 		camera.controls.minDistance = 500;
 		camera.controls.maxDistance = 5000;
 		camera.controls.autoRotate = true; //this is what allows rotation around the globe without DOM element positiong being lost
-		camera.controls.autoRotateSpeed = 1;
+		camera.controls.autoRotateSpeed = 0.20;
 	}
 
 	/* RENDERING */
@@ -286,7 +248,7 @@ $(window).on("load", function() {
 
 			// Create the sphere
 			var sphere = new THREE.SphereGeometry(radius, segments, rings);
-      //sphere.rotateY(THREE.Math.degToRad(-180));
+      // sphere.rotateY(THREE.Math.degToRad(-180));
 			var bump = new THREE.TextureLoader().load('img/bump.jpg');
 			var spec = new THREE.TextureLoader().load('img/specular.png');
 
@@ -328,6 +290,8 @@ $(window).on("load", function() {
 
 	function addGlobeDots() {
 		var geometry = new THREE.Geometry();
+    var listItem;
+    var listText;
 		// Make circle
 		var canvasSize = 16;
 		var halfSize = canvasSize / 2;
@@ -363,15 +327,21 @@ $(window).on("load", function() {
 
 		for (var x = 0; x < allCompanies.length; x++) { //for dots with labels
 			addDot(allCompanies[x].lat, allCompanies[x].lng);
+
+      listItem = document.createElement("li");
+      listText = document.createTextNode(allCompanies[x].name);
+      listItem.appendChild(listText);
+      listItem.classList.add("countryListItem");
+      countryList.appendChild(listItem);
 		}
 
 		// Add the points to the scene
 		groups.globeDots = new THREE.Points(geometry, material);
 		groups.globe.add(groups.globeDots);
-		console.log(groups.globeDots.geometry.vertices);
+
 	}
 
-
+  // use trigonometry to determine if points are closer than the front half of the earth.
 	function checkPinVisibility() {
 		var earth = groups.globe.children[0].children[1];
 		if (earth !== undefined) {
@@ -440,7 +410,7 @@ $(window).on("load", function() {
 		var material = new THREE.LineBasicMaterial({
 			color: props.colours.lines,
 			opacity: props.alphas.lines,
-      			linewidth: 5,
+      linewidth: 2,
 		});
 
 		// Create the final object to add to the scene
@@ -453,7 +423,9 @@ $(window).on("load", function() {
 
 
 	function updateCurve() {
-    $(".globe-list").off("click");
+		// turn off event listener so users can't click during animation
+	    $(".globe-list").off("click");
+	    $(".countryList").off("click");
 		// determine the speed of the animation
 		drawCount += 2;
 		// animate every curve by changing drawCount
@@ -465,8 +437,12 @@ $(window).on("load", function() {
 		} else {
 			// set drawCount to 0 in order for the animation in the next click
 			drawCount = 0;
-      $(".globe-list").on("click", clickFn);
-      $(".globe-list").on("click", "li", clickChangeColor);
+			// put event listener back after animation
+	      	$(".globe-list").on("click", clickFn);
+	      	$(".countryList").on("click", clickFn);
+	      	$([$(".globe-canvas"),$(".globe-list"), $(".countryList")]).each(function(){
+				    $(this).on('click', stopAutoRotation);
+				  });
 			return;
 		}
 	}
@@ -485,7 +461,7 @@ $(window).on("load", function() {
         };
     }
 
-    // interpolation for catmull curve
+    // linear interpolation for catmull curve
     function lat_lng_inter_point(lat1, lng1, lat2, lng2, offset) {
 
         lat1 = lat1 * PI180;
@@ -522,7 +498,6 @@ $(window).on("load", function() {
 			var innerContent;
 			//var targetCountry = data.countries[target];
 			var targetCountry = allCompanies[target]; // REPLACEMENT
-			console.log(targetCountry);
 			element.innerHTML = '<span class="text">' + targetCountry.name + '</span>'; //country name
 			element.className += targetCountry.name;
 			//element.span.className += targetCountry.name;
@@ -653,7 +628,7 @@ $(window).on("load", function() {
 
 	$("#sidebar").fadeOut(function(){
 		  // shift logo to the corner
-		  $("#logoContainer").prependTo("#functions").addClass("logoFixed");
+		  $("#logoContainer").prependTo("#logoBottomRight").addClass("logoFixed");
 		  $(".logo").css("display","inherit");
 
 		  $("#countryName").text('');
@@ -687,10 +662,61 @@ $(window).on("load", function() {
 
 	}).fadeIn();
 
+  //update color of the dots being clicked
+  $(".globe-list li").each(function(){
+      if ($(this).attr('class') == clickedCountry) {
+        $(this).css("background-color", "#eeff5d")
+      } else {
+        $(this).css("background-color", "#fff")
+      }
+  });
+
+  $(".countryList li").each(function(){
+      if ($(this).text() == clickedCountry) {
+        $(this).css("color", "#eeff5d")
+      } else {
+        $(this).css("color", "#fff")
+      }
+  });
+
+  /*--------------------- for camera ------------------------------------*/
+  var targetPosition = xyz_from_lat_lng(countryObject.lat, countryObject.lng, 200);
+  // +20 so the point is not at the center, which makes the curve look flat
+  targetPosition.z += 20;
+
+
+  // get the current camera position
+  const { x, y, z } = camera.object.position
+  const start = new THREE.Vector3(x, y, z)
+
+  // move camera to the target
+  const point = targetPosition
+  const camDistance = camera.object.position.length()
+  camera.object.position
+    .copy(point)
+    .normalize()
+    .multiplyScalar(camDistance)
+
+  // save the camera position
+  const { x: a, y: b, z: c } = camera.object.position
+
+  // invert back to original position
+  camera.object.position
+    .copy(start)
+    .normalize()
+    .multiplyScalar(camDistance)
+  // animate from start to end
+  TweenMax.to(camera.object.position, 1, { x: a, y: b, z: c, onUpdate: () => {
+      camera.controls.update()
+  } })
+
+  /*-------------------- camera end -----------------------------*/
+
 
   }
 
   $(".globe-list").on('click', clickFn);
+  $(".countryList").on('click', clickFn);
 
   $("#companyList").on("click", ".accordion-toggle", function(){
       //Expand or collapse this panel
@@ -708,41 +734,29 @@ $(window).on("load", function() {
       $(".accordion-content").not($(this).next()).slideUp('fast');
 
 
+
+
+
+
   });
 
-  var clickChangeColor = function(){
-    $(this).css("background-color", "#eeff5d");
-    $(".globe-list li").not($(this)).css("background-color", "#ffffff");
-  };
-
-  $(".globe-list").on("click", "li", clickChangeColor);
 
 
+  /*---------------------- stop auto rotation ---------------------*/
 
-  // $("#companyList").on("click", "h2", function(){
-
-  //   if($(this).parent().find('div').css("display") == "none"){
-  //     $("#companyList div > div").css("display","none");
-  //     $(this).parent().find('div').css("display","block"); //.toggleClass("fadeIn","fadeOut");
-  //   } else {
-  //     $(this).parent().find('div').css("display","none"); //.toggleClass("fade","fadeIn");
-  //   }
-
-  // });
-
-  // stop auto rotation
   var timeoutFn;
-  $([$(".globe-canvas"),$(".globe-list")]).each(function(){
-    $(this).click(function() {
-      camera.controls.autoRotate = false;
-      // reset setTimeout when clicked within 5 seconds
+  stopAutoRotation = function(){
+ 	camera.controls.autoRotate = false;
+      // reset setTimeout when clicked within 30 seconds
       if (timeoutFn != undefined){
         clearTimeout(timeoutFn);
       }
       timeoutFn = setTimeout(function() {
         camera.controls.autoRotate = true; //this is what allows rotation around the globe without DOM element positiong being lost
       }, 30000)
-    });
+  }
+  $([$(".globe-canvas"),$(".globe-list"), $(".countryList")]).each(function(){
+    $(this).on('click', stopAutoRotation);
   });
 
   /* ----- click button to change the background ----- */
@@ -758,24 +772,24 @@ $(window).on("load", function() {
 
   /*----------------- for scrolling arrows in sidebar --------*/
   var timeOutScorll = 0;
-  $('#scrollArrows i:nth-child(1)').on('mousedown', function() {
+  $('#scrollArrows i:nth-child(1)').on('mousedown touchstart', function() {
 	  timeOutScorll = setInterval(function(){
 	  	$('#companyList').animate({
 	    	scrollTop: "-=10px"
 	  	},10);
       }, 10);
-	}).bind('mouseup mouseleave', function() {
+	}).bind('mouseup mouseleave touchend', function() {
     	clearTimeout(timeOutScorll);
 	});
 
 
-  $('#scrollArrows i:nth-child(2)').on('mousedown', function() {
+  $('#scrollArrows i:nth-child(2)').on('mousedown touchstart', function() {
 	  timeOutScorll = setInterval(function(){
 	  	$('#companyList').animate({
 	    	scrollTop: "+=10px"
 	  	},10);
       }, 10);
-	}).bind('mouseup mouseleave', function() {
+	}).bind('mouseup mouseleave touchend', function() {
     	clearTimeout(timeOutScorll);
 	});
 
@@ -820,36 +834,244 @@ $(window).on("load", function() {
   // for responsiveness
   window.onresize = function() {
     checkScreenSize();
+    checkCountryList();
   };
 
-  var checkScreenSize = () => {
-    var col5 = document.querySelector(".col-xl-5");
-    var col7 = document.querySelector(".col-xl-7");
-    var width = window.innerWidth;
 
-    width <= 1199 ? col5.parentNode.insertBefore(col7, col5) : col7.parentNode.insertBefore(col5, col7);
-    // if (width <= 991) {
-    //   col5.parentNode.insertBefore(col7, col5);
-    // } else {
-    //   col7.parentNode.insertBefore(col5, col7);
-  	// }
+  // var closeButtonLocation = () => {
+  //   console.log("enter close button");
+  //   if (parseInt(contentWrapper.style.marginLeft, 10) > 0) {
+  //     var width = ($('#mySidenav').width());
+  //     var position = ($('#mySidenav').width() - 65);
+  //     width = (width > 307) ? 242 : (width < 250) ? 185 : position
+  //         $('#nav-icon4').css('margin-left', width+'px');
+  //         console.log(width);
+  //   } else {
+  //     $('#nav-icon4').css('margin-left', '25px')
+  //   }
+  // }
 
-    var state;
-    if (width <= 1000) {
-      console.log("sub 1000");
-      for (i=0; i < usaStates.length; i++) {
-        state = document.querySelector(`.${usaStates[i]} span`);  //document.querySelector(".${usaStates[i]}");
-        state.classList.add('hide');
-        console.log(state);
-      }
-    } else {
-      for (i=0; i < usaStates.length; i++) {
-        state = document.querySelector(`.${usaStates[i]} span`);  //document.querySelector(".${usaStates[i]}");
-        state.classList.remove('hide');
-      }
-    }
+  //determines size of the CountryList. Used for responsiveness
+  var checkCountryList = () => {
+    if ($(".countryContainer").height() > 0) {
+      var height = (window.innerHeight - 288);
+      height = (height > 2500) ? 2500 : (height < 10) ? 10 : height
+          $(".countryContainer").css('height', height+'px');
+        }
   }
 
+  var col5 = document.querySelector(".col-xl-5");
+  var col7 = document.querySelector(".col-xl-7");
+  var checkScreenSize = () => {
+    var topGlow = document.getElementById('top-glow');
+    var globeContainer = document.getElementsByClassName('js-globe')[0];
+    var currentWidth = $("#globeContainer").width();
+    var currentHeight = $("#globeContainer").height();
+
+    var width = window.innerWidth;
+
+    // width <= 1199 ? col5.parentNode.insertBefore(col7, col5) : col7.parentNode.insertBefore(col5, col7);
+    if (width <= 1199) {
+      col5.parentNode.insertBefore(col7, col5);
+      container.width = currentWidth;
+      container.height = currentHeight *0.8;
+    } else {
+      col7.parentNode.insertBefore(col5, col7);
+      container.width = currentWidth;
+      container.height = currentHeight;
+  	}
+
+    container.style.width = container.width +  'px';
+    container.style.height = container.width *0.85 + 'px';
+    topGlow.style.width = container.width + 'px';
+    topGlow.style.height = container.width *0.85 + 'px';
+
+    camera.object.aspect = container.offsetWidth / container.offsetHeight;
+    camera.object.updateProjectionMatrix();
+    renderer.setSize(container.offsetWidth, container.offsetHeight);
+
+    //HIDES US STaTES BUT IS CURRENTLY NOT BEING USED
+    // var state;
+    // if (width <= 1000) {
+    //   console.log("sub 1000");
+    //   for (i=0; i < usaStates.length; i++) {
+    //     state = document.querySelector(`.${usaStates[i]} span`);  //document.querySelector(".${usaStates[i]}");
+    //     state.classList.add('hide');
+    //     console.log(state);
+    //   }
+    // } else {
+    //   for (i=0; i < usaStates.length; i++) {
+    //     state = document.querySelector(`.${usaStates[i]} span`);  //document.querySelector(".${usaStates[i]}");
+    //     state.classList.remove('hide');
+    //     console.log(state);
+    //   }
+    // }
+  }
+
+
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  // function openNav() {
+  //     mySidenav.style.width = "250px";
+  //     contentWrapper.style.marginLeft = "250px";
+  //     navbarButton.classList.add('open');
+  //     navbarButton.style.left = "166px";
+  //
+  //
+  //     // $(this).toggleClass('open');
+  //     // checkScreenSize();
+  // }
+
+  //calculate the width of the navbar FOUND BETTER WAY WITH JUST CSS
+  // function findWidth() {
+  //   var width = (window.innerWidth / 100) * 12;
+  //   var setWidth;
+  //   console.log();
+  //     if (width < 250) {
+  //       setWidth = 250;
+  //     } else if (width > 307) {
+  //       setWidth = 307;
+  //     } else {
+  //       setWidth = width;
+  //     }
+  //   return setWidth;
+  // };
+
+
+  mySidenav.addEventListener("resize", function() {
+    console.log("col7 resize");
+    checkScreenSize();
+  });
+
+  var open = false;
+  var closeContainer = document.querySelector("#closeContainer");
+  navbarButton.addEventListener("click", () => {
+
+    if (open) {
+
+      mySidenav.classList.remove('show');
+
+      contentWrapper.style.marginLeft = "0";
+      // navbarButton.style.display = "block";
+      navbarButton.classList.remove('open');
+      closeContainer.classList.remove('show');
+
+
+      open = false;
+    } else {
+
+      mySidenav.classList.add('show');
+      contentWrapper.style.marginLeft = "250px";
+      navbarButton.classList.add('open');
+      closeContainer.classList.add('show');
+      open = true;
+    }
+
+    // window.requestAnimationFrame(animateCloseButton);
+
+
+    // console.log(contentWrapper.style.marginLeft);
+    // console.log(contentWrapper.style.width);
+    // closeButtonLocation();
+    // window.setTimeout(closeButtonLocation,400);
+
+  });
+
+
+  // var start = null;
+  // var progress = 0;
+  // function animateCloseButton(timestamp) {
+  //   if (!start) start = timestamp;
+  //   var progress = timestamp - start;
+  //   if (parseInt(contentWrapper.style.marginLeft, 10) > 0) {
+  //     var width = ($('#mySidenav').width());
+  //     var position = ($('#mySidenav').width() - 65);
+  //     width = (width > 307) ? 242 : (width < 250) ? 185 : position
+  //         $('#nav-icon4').css('margin-left', width+'px');
+  //         console.log(width);
+  //   } else {
+  //     $('#nav-icon4').css('margin-left', '25px')
+  //   }
+  //   if (progress < 550) {
+  //
+  //     window.requestAnimationFrame(animateCloseButton);
+  //     // progress ++;
+  //     console.log(progress);
+  //   }
+  // }
+  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+  // function closeNav() {
+  //     mySidenav.style.width = "0";
+  //     contentWrapper.style.marginLeft = "0";
+  //     // navbarButton.style.display = "block";
+  //     navbarButton.classList.remove('open');
+  //     // $(this).toggleClass('open');
+  //     // checkScreenSize();
+  //     navbarButton.style.left = "0";
+  // }
+  var input = document.getElementById('myInput');
+
+
+
+
+  function searchBar() {
+
+
+
+    // console.log("sayn");
+    // Declare variables
+    var filter, ul, li, a, i;
+    filter = input.value.toUpperCase();
+    ul = document.getElementsByClassName("countryList")[0];
+    li = ul.getElementsByTagName('li');
+
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+        // a = li[i].getElementsByTagName("a")[0];
+        if (li[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+ }
+
+ var searchicon = document.querySelector("#searchicon");
+ var clearicon = document.querySelector("#clearicon");
+
+
+ clearicon.addEventListener("click", function(){
+   input.value = "";
+   searchBar();
+   searchicon.style.display = "block";
+   clearicon.style.display = "none";
+ });
+
+ input.addEventListener("keyup", function() {
+  //  console.log("sayn!!!");
+  //  console.log(input.value.length);
+   if (input.value.length > 0) {
+     searchicon.style.display = "none";
+     clearicon.style.display = "block";
+   } else {
+     searchicon.style.display = "block";
+     clearicon.style.display = "none";
+   }
+ });
+
+
+ // mySidenav.addEventListener("click", function(){
+ //   console.log(input.value);
+ //   if (document.activeElement === input) {
+ //     searchicon.style.display = "none";
+ //     clearicon.style.display = "block";
+ //     console.log("active");
+ //   } else {
+ //     console.log("not active");
+ //     searchicon.style.display = "block";
+ //     clearicon.style.display = "none";
+ //   }
+ // });
+ //
 
 
 	/* INITIALISATION */
