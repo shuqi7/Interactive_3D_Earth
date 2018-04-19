@@ -29,6 +29,13 @@ h2 {
   position: absolute;
 }
 
+#logoBottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 25px;
+}
+
 #logoContainer{
     /*margin-top: calc(((100% - 209px) / 2) + 180px);*/
 
@@ -40,21 +47,24 @@ h2 {
 }
 
 #contentWrapper{
-  padding-bottom: 80px;
+  /*padding-bottom: 80px;*/
   height: 100vh;
+  transition: 0.5s;
 }
 
 .logo {
   width: 30vw;
   height: auto;
   display: block;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   /*margin: 0 0 0 7vw;*/
+  float: right;
 }
 
 .logoFixed img{
 
   width: 200px;
+  float: none;
 
 }
 
@@ -64,7 +74,7 @@ h2 {
 
 #sidebar{
   /*margin-top: calc(100% - 56vh);*/
-  margin: auto 0 auto 10vw;
+  /*margin: auto 0 auto 10vw;*/
 
 }
 
@@ -84,6 +94,7 @@ h2 {
   color: white;
   padding: 0 35px;
   width: 30vw;
+  float: right;
 }
 
 #contentContainer svg{
@@ -174,15 +185,15 @@ h2.accordion-toggle:after {
 }
 
 #functions {
-  position: absolute;
-  bottom: 20px;
-  right: 55px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 #functions button {
   width: 200px;
   background-color: transparent;
   color: #fff;
+  margin: auto;
 }
 
 #functions button:focus {
@@ -243,6 +254,23 @@ h2.accordion-toggle:after {
   font-size: 49px;
 }
 
+#screenSizeMessage {
+  position: absolute;
+  font-size: 3em;
+  color: white;
+  top: 35%;
+  text-align: center;
+  display: none;
+}
+
+#phoneLogo {
+  width: 350px;
+}
+
+#phoneText {
+  padding: 25px;
+}
+
 @media only screen and (max-height: 1000px) {
   h2 {
     font-size: 1.2rem;
@@ -291,4 +319,21 @@ h2.accordion-toggle:after {
   #functions .wtwig-button-new {
     float: right;
   }
+
+  .logo {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #logoBottomRight {
+    position: relative;
+    float: right;
+    padding: 25px 49px 25px 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+    #sidebar {display: none;}
+    #logoContainer {display: none;}
+    #screenSizeMessage {display: block;}
 }
