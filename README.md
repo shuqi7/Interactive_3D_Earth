@@ -8,6 +8,7 @@
 * CSS-based 2D locations points to follow 3D Earth movement
 * 3D projectiles to connect points
 * Interactive sidebar to showcase specifc information
+* Earth rotating to make points clicked always facing the user
 
 
 ![alt text](http://i67.tinypic.com/nzlqhe.png)
