@@ -17,7 +17,7 @@
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(/prototype/globev3/img/Preloader_2.gif) center no-repeat #fff; /*/prototype/globev2/img/Preloader_2.gif*/
+	background: url(/Interactive_3D_Earth/img/Preloader_2.gif) center no-repeat #fff; /*/prototype/globev2/img/Preloader_2.gif*/
 }
 /*------------------------*/
 
@@ -34,7 +34,7 @@
 	top: calc(-4% - 10px);
 	right: 0;
 	z-index: -1;
-	background-image: url(/prototype/globev3/img/globe-topglow.png);
+	background-image: url(/Interactive_3D_Earth/img/globe-topglow.png);
 	background-size: 63%;
 	background-repeat: no-repeat;
 	background-position: center;
