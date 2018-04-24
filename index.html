@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
     <!-- import json data  -->
     <script type="text/javascript">
@@ -32,7 +32,7 @@
 
     <!-- hamburger menu  -->
     <div id="closeContainer">
-      <div id="nav-icon4">
+      <div id="closeButton">
         <span></span>
         <span></span>
         <span></span>
@@ -57,6 +57,9 @@
         <div class="wtwig-button-new light-grey">
           <button id="changeFullScreenButton">Enter FullScreen</button>
         </div>
+        <div class="wtwig-button-new light-grey">
+          <button id="returnHomeButton">Return Homepage</button>
+        </div>
       </div>
     </div>
 
@@ -64,7 +67,6 @@
     <main class="container-fluid">
       <div class="row align-items-center justify-content-center d-flex flex-wrap" id="contentWrapper">
 
-        <!-- comapnies side bar -->
         <div class="col-xl-5 ">
           <div id="sidebar">
             <div class="d-lg-block" id="logoContainer">
@@ -89,7 +91,6 @@
           </div>
         </div>
 
-        <!-- globe -->
         <div class="col-xl-7  d-flex" id="globeContainer">
           <div class="globe js-globe justify-content-center">
         		<ul class="globe-list js-list"></ul>
@@ -107,16 +108,17 @@
     <!-- message if screen size is too small -->
     <div id="screenSizeMessage">
       <img src="http://www.investinontario.com/./sites/default/themes/invest2018/images/ontario-canada-wtwig.svg" alt="Ontario_Invesment_Office_Logo" class="img-fuild" id="phoneLogo"/>
-      <h1 id="phoneText">For optimal experience, please use a larger device</h1>
+      <h1 id="phoneText" class="lead">For optimal experience, please use a larger device</h1>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/90/three.js"></script>
-    <script src="js/orbitcontrols.js"></script>
-    <script src="https://rawgit.com/spite/THREE.MeshLine/master/src/THREE.MeshLine.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+  	<script src="js/orbitcontrols.js"></script>
+  	<script src="https://rawgit.com/spite/THREE.MeshLine/master/src/THREE.MeshLine.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.1/dat.gui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
 
   </body>
