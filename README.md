@@ -10,5 +10,5 @@
 * Interactive sidebar to showcase specifc information
 * Earth rotating to make points clicked always facing the user
 
-
-![alt text](http://i67.tinypic.com/nzlqhe.png)
+## Screenshot:
+![alt text](http://i64.tinypic.com/6p3mo2.png)
