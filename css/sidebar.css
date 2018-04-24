@@ -1,32 +1,44 @@
+/*---initial styling---*/
+
 body {
   background-image: url(http://www.medi-library.com/salestoolkit/wp-content/uploads/2018/03/wtwig-background-purple.jpg);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:100vh;
 }
 
-html{
-      font-family: 'Lato', sans-serif;
-      overflow-x: hidden;
-  }
+html {
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+}
 
 h2 {
   font-weight: 100;
   font-size: 1.9rem;
 }
 
-
 .col-lg-4{
   z-index: 104;
 }
-#earthContainer{
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+
+#contentWrapper{
+  height: 100vh;
+  transition: 0.5s;
+}
+/*------------------------*/
+
+/*---logo manipulation---*/
+.logo {
+  width: 30vw;
+  height: auto;
+  display: block;
+  float: right;
+}
+
+.logoFixed img{
+  width: 200px;
+  float: none;
 }
 
 #logoBottomRight {
@@ -35,60 +47,12 @@ h2 {
   right: 0;
   padding: 25px;
 }
+/*------------------------*/
 
-#logoContainer{
-    /*margin-top: calc(((100% - 209px) / 2) + 180px);*/
-
-}
-
-.container-fluid{
-    min-height: 100%;
-    position: relative;
-}
-
-#contentWrapper{
-  /*padding-bottom: 80px;*/
-  height: 100vh;
-  transition: 0.5s;
-}
-
-.logo {
-  width: 30vw;
-  height: auto;
-  display: block;
-  /*margin: 0 auto;*/
-  /*margin: 0 0 0 7vw;*/
-  float: right;
-}
-
-.logoFixed img{
-
-  width: 200px;
-  float: none;
-
-}
-
-.row{
-  height: 100vh;
-}
-
+/*---content container---*/
 #sidebar{
-  /*margin-top: calc(100% - 56vh);*/
-  /*margin: auto 0 auto 10vw;*/
-
+  margin: auto;
 }
-
-.translateOut {
-
-  transition: 2s ease;
-}
-
-.translateIn {
-  transform: translateY(0%);
-  transition: 2s ease;
-}
-
-
 
 #contentContainer{
   color: white;
@@ -101,10 +65,18 @@ h2 {
   display: none;
 }
 
-#companyList::-webkit-scrollbar {
-    display: none;
+.container-fluid{
+  min-height: 100%;
+  position: relative;
 }
 
+#countryName{
+  font-size: 62px;
+  margin-bottom: -25px;
+}
+/*------------------------*/
+
+/*---company list---*/
 #companyList{
   max-height: 60vh;
   overflow: auto;
@@ -113,17 +85,10 @@ h2 {
   padding-top: 20px;
 }
 
-/*#companyList button{
+#companyList::-webkit-scrollbar {
+    display: none;
+}
 
-  border: 2px #FFF solid;
-  padding: 12px;
-  font-size: 1.4em;
-  color: #fff;
-  font-weight: 600;
-  border-radius: 6px;
-  margin-bottom: 8px;
-  width: 97%;
-}*/
 #companyList li h2 {
   border-bottom: 1px solid #ffffff36;
   padding-bottom: 5px;
@@ -140,42 +105,23 @@ h2 {
   padding: 10px;
   font-size: 20px;
   margin-bottom: 5px;
-
 }
 
-#countryName{
-  font-size: 62px;
-  margin-bottom: -25px;
+.row{
+  height: 100vh;
 }
 
-#companyList::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-	border-radius: 10px;
-	background-color: rgba(255, 0, 0, 0);
+.accordion-toggle {
+  cursor: pointer;
 }
 
-#companyList::-webkit-scrollbar
-{
-	width: 5px;
-	background-color: rgba(255, 0, 0, 0);
-}
-
-#companyList::-webkit-scrollbar-thumb
-{
-	border-radius: 6px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
-	background-color: rgba(255,255,255,0.8);
-}
-
-
-.accordion-toggle {cursor: pointer;}
 .accordion-content {
   display: none;
   font-weight: 100;
-
 }
-.accordion-content.default {display: block;}
+.accordion-content.default {
+  display: block;
+}
 
 h2.accordion-toggle:after {
   content: attr(data-sign);
@@ -183,59 +129,9 @@ h2.accordion-toggle:after {
   right: -22px;
   opacity: 0.5;
 }
+/*------------------------*/
 
-#functions {
-  width: 80%;
-  margin: 0 auto;
-}
-
-#functions button {
-  width: 200px;
-  background-color: transparent;
-  color: #fff;
-  margin: auto;
-}
-
-#functions button:focus {
-  outline:0;
-}
-
-#functions .wtwig-button-new {
-    position: relative;
-    border-top: 0;
-    margin-top:10px;
-}
-
-.wtwig-button-new a,.wtwig-button-new button {
-    display: block;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-}
-
-.wtwig-button-new a::before,.wtwig-button-new button::before {
-    content: "";
-    background: url(https://www.investinontario.com/sites/default/themes/invest2018/images/wtwig-button-top.svg) no-repeat right -5px;
-    height: 5px;
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    left: 0;
-    width: 100%;
-}
-
-.wtwig-button-new.light-grey {
-     border:1px solid #eeeeee;
-     border-top:0;
-}
-
-.wtwig-button-new.light-grey a,.wtwig-button-new.light-grey button {
-    color: #eeeeee !important;
-}
-
-
-/*for scrolling arrow*/
-
+/*---scrolling arrows---*/
 #scrollArrows i{
   display: block;
 }
@@ -253,47 +149,38 @@ h2.accordion-toggle:after {
   top: 47%;
   font-size: 49px;
 }
+/*------------------------*/
 
+/*---when screen becomes too small to display--*/
 #screenSizeMessage {
   position: absolute;
-  font-size: 3em;
   color: white;
-  top: 35%;
+  top: 30%;
   text-align: center;
   display: none;
 }
 
-#phoneLogo {
-  width: 350px;
-}
-
 #phoneText {
+  font-size: 2em;
   padding: 25px;
 }
 
+#phoneLogo {
+  width: 260px;
+}
+/*------------------------*/
+
+/*---change font-size for better responsiveness---*/
 @media only screen and (max-height: 1000px) {
   h2 {
     font-size: 1.2rem;
   }
 }
 
+/*---add responsiveness---*/
 @media only screen and (max-width: 1199px) {
-
   body{
     background-size: 460%;
-  }
-
-  #functions {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 20px;
-    width: 90%;
-
-  }
-
-  #functions div{
-    display: inline-block;
-        margin-left: 10px;
   }
 
   #contentContainer {
@@ -304,20 +191,8 @@ h2.accordion-toggle:after {
     height: auto;
   }
 
-  #sidebar{
-    margin: auto;
-  }
-
   #scrollArrows {
     right: 20px;
-  }
-
-  #functions #logoContainer{
-    float: left;
-  }
-
-  #functions .wtwig-button-new {
-    float: right;
   }
 
   .logo {
@@ -332,6 +207,7 @@ h2.accordion-toggle:after {
   }
 }
 
+/*---hide elements when screen is too small to display globe---*/
 @media screen and (max-width: 650px) {
     #sidebar {display: none;}
     #logoContainer {display: none;}

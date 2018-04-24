@@ -7,61 +7,18 @@ button:focus {
     outline: none;
 }
 
-
-#searchContainer {
-  width: 80%;
-  margin: 45px auto 0 auto;
-  position: relative;
-}
-
-#myInput {
-  /*background-image: url(/img/searchicon.png);
-  background-position: 173px 10px; /*10 for right location */
-  /*background-size: 11%;
-  background-repeat: no-repeat;*/
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  font-size: 1rem;
-  color: white;
-  padding: 8px 20px 8px 40px;
-  border: none;
-  border-bottom: 2px solid #ffffffab;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-
-}
-
-#searchicon {
-  position: absolute;
-  left: 0;
-  top: 11px;
-  transition: 0.5s ease-in-out;
-
-}
-
-#clearicon {
-  position: absolute;
-  left: 0;
-  top: 11px;
-  display: none;
-  transition: 0.5s ease-in-out;
-}
-
+/*---Hamburger Menu---*/
 #closeContainer {
   position: fixed;
   min-width: 90px;
   width: 12%;
   height: 50px;
   max-width: 50px;
-  /* right: 0; */
   transition: 0.5s ease-in-out;
-  z-index: 11;
+  z-index: 60;
 }
 
-/* Nav Icon */
- #nav-icon4 {
+ #closeButton {
    width: 39px;
    height: 45px;
    position: absolute;
@@ -79,7 +36,7 @@ button:focus {
    z-index: 4;
 }
 
- #nav-icon4 span {
+#closeButton span {
    display: block;
    position: absolute;
    height: 6px;
@@ -98,8 +55,7 @@ button:focus {
    transition: .25s ease-in-out;
 }
 
-
-#nav-icon4 span:nth-child(1) {
+#closeButton span:nth-child(1) {
   top: 0px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -107,7 +63,7 @@ button:focus {
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(2) {
+#closeButton span:nth-child(2) {
   top: 12px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -115,7 +71,7 @@ button:focus {
   transform-origin: left center;
 }
 
-#nav-icon4 span:nth-child(3) {
+#closeButton span:nth-child(3) {
   top: 24px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
@@ -123,18 +79,11 @@ button:focus {
   transform-origin: left center;
 }
 
-#nav-icon4.open {
-  /*margin-left: 188px;*/
+#closeButton.open {
   transition: .5s ease-in-out;
 }
 
-/*@media only screen and (min-width: 2300px) {
-  #nav-icon4.open {
-    margin-left: 220px;
-  }
-}*/
-
-#nav-icon4.open span:nth-child(1) {
+#closeButton.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -143,7 +92,7 @@ button:focus {
   left: 8px;
 }
 
-#nav-icon4.open span:nth-child(1) {
+#closeButton.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -152,12 +101,12 @@ button:focus {
   left: 8px;
 }
 
-#nav-icon4.open span:nth-child(2) {
+#closeButton.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
 
-#nav-icon4.open span:nth-child(3) {
+#closeButton.open span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -166,21 +115,26 @@ button:focus {
   left: 8px;
 }
 
-/* The side navigation menu */
-.sidenav {
-    height: 100%; /* 100% Full-height */
-    min-width: 0px;
-    width: 12%; /* 0 width - change this with JavaScript */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+/*------------------------*/
 
+/*---sidenav container---*/
+.sidenav {
+    height: 100%;
+    min-width: 0px;
+    width: 12%;
     max-width: 0px;
-    position: fixed; /* Stay in place */
-    z-index: 3; /* Stay on top */
-    top: 0; /* Stay at the top */
+    position: fixed;
+    z-index: 3;
+    top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    background-color: rgba(0, 0, 0, 0.5);;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .show {
@@ -191,55 +145,49 @@ button:focus {
 .sidenav::-webkit-scrollbar {
     display: none;
 }
+/*------------------------*/
 
-/* The navigation menu links */
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+/*---sidenav search bar---*/
+#searchContainer {
+  width: 80%;
+  margin: 45px auto 0 auto;
+  position: relative;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
-    padding: 20px;
-}
-
-
-
-#navbar-button {
+#myInput {
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  font-size: 1rem;
   color: white;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 5;
-    height: 35px;
-    width: 35px;
-    background: url(/img/menu.png);
-    background-size: contain;
+  padding: 8px 20px 8px 40px;
+  border: none;
+  border-bottom: 2px solid #ffffffab;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
+#searchicon {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  transition: 0.5s ease-in-out;
+}
+
+#clearicon {
+  position: absolute;
+  left: 0;
+  top: 11px;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+/*------------------------*/
+
+/*-----country list-----*/
 .countryContainer{
   margin-top: 10px;
   height: 72%;
-  /*max-height: 1200px;*/
 }
 
 .countryList {
@@ -248,8 +196,6 @@ button:focus {
     font-size: 1.3rem;
     overflow: auto;
     height: 100%;
-    /*max-height: 1200px;*/
-    /* min-height: 500px; */
     padding-left: 20px;
     width: 80%;
     margin: 0 auto;
@@ -269,31 +215,82 @@ button:focus {
   cursor: pointer;
   color: #948888 !important;
 }
+/*------------------------*/
 
-.countryListItem {
-  /*font-size: 20px;*/
-}
-
+/*---bottom control buttons---*/
 #devider {
   width: 80%;
   margin: 30px auto 0;
   border-bottom: 2px solid white;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+#functions {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#functions button {
+  width: 200px;
+  background-color: transparent;
+  color: #fff;
+  margin: auto;
+}
+
+#functions button:focus {
+  outline:0;
+}
+
+#functions .wtwig-button-new {
+    position: relative;
+    border-top: 0;
+    margin-top:10px;
+}
+
+.wtwig-button-new a,.wtwig-button-new button {
+    display: block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.wtwig-button-new a::before,.wtwig-button-new button::before {
+    content: "";
+    background: url(https://www.investinontario.com/sites/default/themes/invest2018/images/wtwig-button-top.svg) no-repeat right -5px;
+    height: 5px;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+}
+
+.wtwig-button-new.light-grey {
+     border:1px solid #eeeeee;
+     border-top:0;
+}
+
+.wtwig-button-new.light-grey a,.wtwig-button-new.light-grey button {
+    color: #eeeeee !important;
+}
+/*------------------------*/
+
+/*change sidenav style and hide logo in bottom right*/
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     #logoBottomRight {display: none;}
 }
 
+/*remove sidenav elements when window is very small*/
 @media screen and (max-height: 280px) {
     .countryContainer {display: none;}
     #searchContainer {display: none;}
     #devider {margin: 70px auto 0px;}
 }
 
+/*remove elements to display unsuitable device message*/
 @media screen and (max-width: 650px) {
     #closeContainer {display: none;}
     #mySidenav {display: none;}
+    #logoBottomRight {display: none;}
 }
